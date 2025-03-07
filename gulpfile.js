@@ -39,10 +39,9 @@ function images(){
     .pipe(newer('app/images'))
     .pipe(webp())
 
-    .pipe(src('app/images/src/*.*'))
+    .pipe(src(['app/images/src/**/*.*', '!app/images/src/**/*.svg']))
     .pipe(newer('app/images'))
     .pipe(imagemin())
-
     .pipe(dest('app/images'))
 }
 
