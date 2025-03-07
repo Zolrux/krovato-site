@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+app/css/*.min.css
+app/js/*.min.js
+app/*.html
+app/images/stack/

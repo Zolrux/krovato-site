@@ -1,0 +1,24 @@
+@use "./variables" as *;
+@use "./functions" as *;
+
+body {
+    font-family: "ProximaNova", sans-serif;
+    color: $dark;
+    line-height: 1.87;
+}
+
+[class*="__container"] {
+    max-width: toRem($containerWidth + $paddingContainerInline);
+    padding-inline: toRem($paddingContainerInline);
+    margin-inline: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: clip;
+    > main {
+        flex: 1 1 auto;
+    }
+}
