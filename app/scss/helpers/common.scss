@@ -5,6 +5,7 @@ body {
     font-family: "ProximaNova", sans-serif;
     color: $dark;
     line-height: 1.87;
+	background: $light;
 }
 
 [class*="__container"] {
@@ -21,4 +22,10 @@ body {
     > main {
         flex: 1 1 auto;
     }
+}
+
+.title {
+	font-size: toRem(32);
+	font-weight: 600;
+	line-height: 1.2;
 }
