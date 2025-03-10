@@ -1,0 +1,45 @@
+.home-banner {
+
+    // .home-banner__slide-link
+
+    &__slide-link {
+        display: block;
+
+        img {
+            max-width: 100%;
+            border-radius: toRem(10);
+        }
+    }
+
+    // .home-banner__pagination
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(10);
+        bottom: toRem(20) !important;
+        
+        &-bullet {
+            width: toRem(12);
+            height: toRem(12);
+            border-radius: 50%;
+            background-color: $light;
+            border: toRem(3) solid $light;
+            transition: background-color 0.3s;
+            cursor: pointer;
+
+            &--active {
+                background-color: $yellow;
+            }
+        }
+    }
+
+    // .home-banner__btn-next
+
+    &__btn-next {
+        &::after {
+            display: none;            
+        }
+    }
+}
