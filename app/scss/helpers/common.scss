@@ -9,7 +9,7 @@ body {
 }
 
 [class*="__container"] {
-    max-width: toRem($containerWidth + $paddingContainerInline);
+    max-width: toRem($containerWidth + $paddingContainerInline * 2);
     padding-inline: toRem($paddingContainerInline);
     margin-inline: auto;
 }
