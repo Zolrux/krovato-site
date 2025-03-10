@@ -1,5 +1,6 @@
 [class*="__title-nav-wrapper"] {
 	display: flex;
+	align-items: center;
 	gap: toRem(20);
 	justify-content: space-between;
 	.slider-arrows {
