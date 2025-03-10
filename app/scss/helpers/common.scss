@@ -29,3 +29,10 @@ body {
 	font-weight: 600;
 	line-height: 1.2;
 }
+
+%card-item {
+	background: #fff;
+	border-radius: toRem(8);
+	box-shadow: toRem(-3) toRem(4) toRem(15) toRem(0) rgba(0, 0, 0, 0.06);
+	overflow: hidden;
+}
