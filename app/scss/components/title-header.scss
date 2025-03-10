@@ -1,6 +1,11 @@
 // Компонент [Заголовок секций]
 
 .block-header {
+
+	&--margin {
+		margin-bottom: toRem(40);
+	}
+	
 	// .block-header__content
 	&__content {
 		display: flex;
