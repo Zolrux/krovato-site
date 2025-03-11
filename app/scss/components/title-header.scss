@@ -1,10 +1,11 @@
 // Компонент [Заголовок секций]
 
-.block-header {
+[class*="__title-nav-wrapper"],
+*:not([class*="__title-nav-wrapper"]):has(> .block-header) .block-header--margin {
+	margin-bottom: toRem(40);
+}
 
-	&--margin {
-		margin-bottom: toRem(40);
-	}
+.block-header {
 	
 	// .block-header__content
 	&__content {
