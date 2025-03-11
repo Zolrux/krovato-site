@@ -7,9 +7,15 @@
 	box-sizing: border-box;
 }
 
+*::before,
+*::after {
+	display: inline-block;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
+	display: inline-block;
 }
 
 ul,
@@ -35,31 +41,53 @@ h6 {
 html,
 body {
 	height: 100%;
+	line-height: 1;
 	scroll-behavior: smooth;
 }
-
+/* FORM */
 button,
-input {
+input,
+textarea {
 	font-weight: inherit;
 	font-size: inherit;
 	color: inherit;
 	font-family: inherit;
+	line-height: inherit;
+	background-color: transparent;
+}
+
+input,
+textarea {
+	width: 100%;
+}
+
+label {
+	display: inline-block;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+	appearance: none;
+}
+
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+	appearance: none;
 }
 
 button {
-	cursor: pointer;
 	background-color: inherit;
 }
 
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	appearance: none;
+}
+
+button,
+select,
+option {
+	cursor: pointer;
 }
 
 select::-ms-expand {
@@ -67,8 +95,8 @@ select::-ms-expand {
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 polyline, path, rect {

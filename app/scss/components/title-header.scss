@@ -44,7 +44,7 @@
 				color: #ffa115;
 				&::after {
 					transform: translateX(toRem(3));
-					background-color: #ffa115;
+					background-color: $yellowHover;
 				}
 			}
 		}

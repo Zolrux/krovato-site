@@ -1,0 +1,83 @@
+.item-category {
+	@extend %card-item;
+	// .item-category__link
+	&__link {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(15);
+		padding: toRem(20);
+		position: relative;
+		aspect-ratio: 250 / 300;
+		// background circle for card
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 112%; /* 280/250 */
+			aspect-ratio: 1 / 1;
+			border-radius: 50%;
+			background: $light;
+			transform: translate(-50%, 31.428571%); /* 88/280 */
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				.item-category__arrow {
+					transform: scale(1);
+				}
+			}
+		}
+		@media (any-hover: none) {
+			// annulment hover for mobile
+			.item-category__arrow {
+				transform: scale(1);
+			}
+		}
+	}
+	// .item-category__header
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+		gap: toRem(15);
+		font-weight: 600;
+		font-size: toRem(20);
+		line-height: 1.4;
+	}
+	// .item-category__quantity
+	&__quantity {
+		color: $greyLight;
+	}
+	// .item-category__arrow
+	&__arrow {
+		position: absolute;
+		bottom: toRem(20);
+		right: toRem(20);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		border: toRem(2) solid $yellow;
+		width: toRem(50);
+		height: toRem(50);
+		transition: transform 0.3s;
+		z-index: 3;
+		will-change: transform;
+		transform: scale(0);
+		// стрелка
+		&::before {
+			content: "";
+			width: toRem(11);
+			height: toRem(11);
+			mask: url("../images/sprite.svg#arrow-forward");
+			mask-repeat: no-repeat;
+			background-color: $yellow;
+		}
+	}
+	// .item-category__image
+	&__image {
+		max-width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+}
