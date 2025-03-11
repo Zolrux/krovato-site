@@ -1,0 +1,20 @@
+.stock {
+
+    // .stock__slide-link
+
+    &__slide-link {
+        border-radius: toRem(8);
+        overflow: hidden;
+        
+        img {
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        @media (any-hover: hover){
+            &:hover img {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
