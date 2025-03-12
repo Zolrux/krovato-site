@@ -1,0 +1,44 @@
+<section class="articles-news">
+    <div class="articles-news__container">
+        <div class="articles-news__title-nav-wrapper">
+            @@include("title-header.html", {
+                showMore: true,
+                titleValue: "Свіжі статті та останні новини",
+                titleLinkValue: "Читати блог"
+            })
+            @@include("slider-nav.html", {
+                btnPrevClass: "articles-news__btn-prev",
+                btnNextClass: "articles-news__btn-next"
+            })
+        </div>
+        <div class="articles-news__slider swiper">
+            <div class="articles-news__wrapper swiper-wrapper">
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Стільці для вітальні. Як правильно вибрати?",
+                    "articleImgPath": "../images/articles/01.webp"
+                })
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Що краще вибрати для кухні – стільці чи кухонний куточок?",
+                    "articleImgPath": "../images/articles/02.webp"
+                })
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Оформлення вітальні. Які м'які меблі краще вибрати?",
+                    "articleImgPath": "../images/articles/03.webp"
+                })
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, iste consequuntur. Nesciunt.",
+                    "articleImgPath": "../images/articles/02.webp"
+                })
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Lorem, ipsum dolor.",
+                    "articleImgPath": "../images/articles/01.webp"
+                })
+            </div>
+        </div>
+    </div>
+</section>
