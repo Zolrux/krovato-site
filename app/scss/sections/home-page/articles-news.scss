@@ -1,0 +1,18 @@
+.articles-news {
+    padding: toRem(70) 0;
+
+    // .articles-news__slider
+
+    &__slider {
+        padding: toRem(20);
+        margin: toRem(-20);
+    }
+
+    // .articles-news__slide
+    
+    &__slide {
+        max-width: toRem(410);
+        width: 100%;
+        height: auto;
+    }
+}
