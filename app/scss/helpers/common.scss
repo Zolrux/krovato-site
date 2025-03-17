@@ -15,13 +15,17 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    overflow: clip;
-    > main {
-        flex: 1 1 auto;
-    }
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: clip;
+	> main {
+		flex: 1 1 auto;
+		transition: all 0.3s;
+		.catalog-open & {
+			filter: blur(toRem(2));
+		}
+	}
 }
 
 .title {
