@@ -1,0 +1,11 @@
+<div class="popular-categories">
+	<div class="popular-categories__container">
+		@@include("title-header.html", {
+			showMore: false,
+			titleValue: "Популярні категорії"
+		})
+		<div class="popular-categories__cards">
+			@@loop("category-card.html", "../components/data/category-cards.json")
+		</div>
+	</div>
+</div>
