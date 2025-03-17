@@ -1,0 +1,8 @@
+.popular-products {
+	// .popular-products__cards
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: toRem(30);
+	}
+}
