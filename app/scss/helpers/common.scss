@@ -40,3 +40,7 @@ body {
 	box-shadow: toRem(-3) toRem(4) toRem(15) toRem(0) rgba(0, 0, 0, 0.06);
 	overflow: hidden;
 }
+
+._content-padding {
+	padding: toRem(40) toRem(70);
+}
