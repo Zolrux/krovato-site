@@ -1,0 +1,9 @@
+.popular-categories {
+	// .popular-categories__cards
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: toRem(10);
+		row-gap: toRem(24);
+	}
+}
