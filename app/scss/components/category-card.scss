@@ -1,4 +1,6 @@
 .item-category {
+	flex-basis: toRem(250);
+	flex-shrink: 0;
 	@extend %card-item;
 	// .item-category__link
 	&__link {
@@ -7,6 +9,7 @@
 		gap: toRem(15);
 		padding: toRem(20);
 		position: relative;
+		height: 100%;
 		aspect-ratio: 250 / 300;
 		// background circle for card
 		&::after {
@@ -24,6 +27,9 @@
 			&:hover {
 				.item-category__arrow {
 					transform: scale(1);
+				}
+				.item-category__header {
+					color: $yellow;
 				}
 			}
 		}
@@ -43,6 +49,7 @@
 		font-weight: 600;
 		font-size: toRem(20);
 		line-height: 1.4;
+		transition: color 0.3s ease-out;
 	}
 	// .item-category__quantity
 	&__quantity {
