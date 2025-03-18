@@ -1,0 +1,24 @@
+.stock {
+
+    // .stock__slide-link
+
+    &__slide-link {
+        display: inline-block;
+        border-radius: toRem(8);
+        overflow: hidden;
+        aspect-ratio: 410 / 280;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        @media (any-hover: hover){
+            &:hover img {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
