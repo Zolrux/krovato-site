@@ -35,9 +35,17 @@
         }
     }
 
+    // .home-banner__btn-prev
+
+    &__btn-prev {
+        left: toRem(20);
+    }
+
     // .home-banner__btn-next
 
     &__btn-next {
+        right: toRem(20);
+
         &::after {
             display: none;            
         }
