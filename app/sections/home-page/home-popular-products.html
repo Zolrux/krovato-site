@@ -1,8 +1,9 @@
-<div class="popular-products">
+<div class="popular-products _content-padding">
 	<div class="popular-products__container">
 		@@include("title-header.html", {
 			showMore: true,
-			titleValue: "Популярні категорії"
+			titleValue: "Популярні категорії",
+			titleLinkValue: "Дивитись всі"
 		})
 		<div class="popular-products__cards">
 			@@loop("product-card.html", "../components/data/product-cards.json")
