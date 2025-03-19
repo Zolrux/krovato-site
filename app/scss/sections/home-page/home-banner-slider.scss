@@ -5,10 +5,22 @@
 
     &__slide-link {
         display: block;
-
+        
+        picture {
+            display: block;
+        }
+        
         img {
+            display: block;
             max-width: 100%;
+            overflow: hidden;
             border-radius: toRem(10);
+        }
+        
+        @media (max-width: toRem(479.98)) {
+            img {
+                margin: 0 auto;
+            }
         }
     }
 

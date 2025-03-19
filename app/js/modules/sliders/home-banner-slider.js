@@ -8,6 +8,7 @@ function homeBannerSlider() {
             nextEl: '.home-banner__btn-next',
             prevEl: '.home-banner__btn-prev',
         },
+        spaceBetween: 20,
         pagination: {
             el: '.home-banner__pagination',
             bulletActiveClass: 'home-banner__pagination-bullet--active',
