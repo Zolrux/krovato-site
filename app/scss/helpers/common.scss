@@ -42,7 +42,7 @@ body {
 }
 
 ._content-padding {
-	padding-top: toRem(70);
+	padding-top: adaptiveValue(70, 60, 767.98);
 }
 
 %expand-title {
