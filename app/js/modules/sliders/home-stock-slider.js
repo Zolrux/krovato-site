@@ -10,8 +10,8 @@ function homeStockSlider() {
         },
         pagination: {
             el: ".stock__slider-pagination",
-            bulletActiveClass: 'stock__slider-pagination-bullet--active',
-            bulletClass: 'stock__slider-pagination-bullet',
+            bulletActiveClass: 'stock__slider-pagination-bullet--active slider-pagination__bullet--active',
+            bulletClass: 'stock__slider-pagination-bullet slider-pagination__bullet',
             clickable: true
         },
         autoplay: {
