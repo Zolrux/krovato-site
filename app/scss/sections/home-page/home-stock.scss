@@ -1,4 +1,5 @@
 .stock {
+    padding-bottom: adaptiveValue(70, 60, 767.98);
 
     // .stock__slide-link
 
@@ -7,6 +8,10 @@
         border-radius: toRem(8);
         overflow: hidden;
         aspect-ratio: 410 / 280;
+
+        @media (max-width: toRem(560)){
+              width: 100%;
+        }
         
         img {
             width: 100%;
@@ -18,6 +23,64 @@
         @media (any-hover: hover){
             &:hover img {
                 transform: scale(1.03);
+            }
+        }
+    }
+
+    @media (max-width: toRem(560)) {
+        .slider-arrows {
+            display: none;
+        }
+    }
+
+    // .stock__slider-pagination
+
+    &__slider-pagination {
+        display: none;
+        
+        @media (max-width: toRem(560)){
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: toRem(10);
+            margin-top: toRem(20);
+
+            // .stock__slider-pagination-bullet
+
+            &-bullet {
+                position: relative;
+                width: toRem(15);
+                height: toRem(15);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 0 0 toRem(15);
+                border-radius: 50%;
+                background-color: #fff;
+                border: toRem(2) solid $greyLight;
+                transition: border .3s ease;
+
+                &::before {
+                    content:'';
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    position: absolute;
+                    border: toRem(2) solid transparent;
+                    border-radius: 50%;
+                    inset: 0;
+                    transition: background-color .3s ease, border .3s ease;
+                }
+
+                &--active {
+                    border: toRem(2) solid #fff;
+                    
+                    &::before {
+                        background-color: $yellow;
+                        border: toRem(2) solid #fff;
+                    }
+                }
             }
         }
     }
