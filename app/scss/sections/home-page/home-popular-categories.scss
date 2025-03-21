@@ -1,9 +1,13 @@
 .popular-categories {
 	// .popular-categories__cards
 	&__cards {
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: toRem(10);
-		row-gap: toRem(24);
+		display: grid;
+		grid-gap: toRem(24) toRem(10);
+		grid-template-columns: repeat(auto-fill, minmax(toRem(250), 1fr));
+		
+		@media (max-width: toRem(560)) {
+			grid-gap: toRem(10);
+			grid-template-columns: repeat(auto-fill, minmax(toRem(200), 1fr));
+		}
 	}
 }

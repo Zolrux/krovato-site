@@ -1,6 +1,4 @@
 .item-category {
-	flex-basis: toRem(250);
-	flex-shrink: 0;
 	@extend %card-item;
 	// .item-category__link
 	&__link {
@@ -10,7 +8,6 @@
 		padding: toRem(20);
 		position: relative;
 		height: 100%;
-		aspect-ratio: 250 / 300;
 		// background circle for card
 		&::after {
 			content: "";
@@ -65,8 +62,8 @@
 		align-items: center;
 		border-radius: 50%;
 		border: toRem(2) solid $yellow;
-		width: toRem(50);
-		height: toRem(50);
+		width: adaptiveValue(50, 40, 767.98);;
+		height: adaptiveValue(50, 40, 767.98);;
 		transition: transform 0.3s;
 		z-index: 3;
 		will-change: transform;
@@ -74,8 +71,8 @@
 		// стрелка
 		&::before {
 			content: "";
-			width: toRem(11);
-			height: toRem(11);
+			width: adaptiveValue(11, 9, 767.98);
+			height: adaptiveValue(11, 9, 767.98);
 			mask: url("../images/sprite.svg#arrow-forward");
 			mask-repeat: no-repeat;
 			background-color: $yellow;
