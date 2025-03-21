@@ -29,9 +29,13 @@ body {
 }
 
 .title {
-	font-size: toRem(40);
+	font-size: adaptiveValue(40, 30, 479.98);
 	font-weight: 600;
 	line-height: 1.2;
+
+    @media (max-width: toRem(767.98)) {
+          line-height: 1.33;
+    }
 }
 
 %card-item {
