@@ -13,6 +13,21 @@ function articlesNewsSlider() {
         navigation: {
             nextEl: ".articles-news__btn-next",
             prevEl: ".articles-news__btn-prev"
+        },
+        on: {
+            resize: swiper => {
+                if (window.innerWidth < 768) {
+                    swiper.destroy();
+                }
+            }
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            }
         }
     })
 }
