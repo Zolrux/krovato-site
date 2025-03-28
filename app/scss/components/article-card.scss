@@ -70,6 +70,7 @@
         font-size: toRem(19);
         line-height: 1.26;
         color: $yellow;
+        align-self: flex-start;
         transition: color 0.3s ease;
 
         &::after {
