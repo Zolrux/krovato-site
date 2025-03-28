@@ -2,16 +2,16 @@
 @use "./functions" as *;
 
 body {
-    font-family: "ProximaNova", sans-serif;
-    color: $dark;
-    line-height: 1.87;
+	font-family: "ProximaNova", sans-serif;
+	color: $dark;
+	line-height: 1.87;
 	background: $light;
 }
 
 [class*="__container"] {
-    max-width: toRem($containerWidth + $paddingContainerInline * 2);
-    padding-inline: toRem($paddingContainerInline);
-    margin-inline: auto;
+	max-width: toRem($containerWidth + $paddingContainerInline * 2);
+	padding-inline: toRem($paddingContainerInline);
+	margin-inline: auto;
 }
 
 .wrapper {
@@ -22,6 +22,7 @@ body {
 	> main {
 		flex: 1 1 auto;
 		transition: all 0.3s;
+		.cart-open &,
 		.catalog-open & {
 			filter: blur(toRem(2));
 		}
@@ -33,9 +34,9 @@ body {
 	font-weight: 600;
 	line-height: 1.2;
 
-    @media (max-width: toRem(767.98)) {
-          line-height: 1.33;
-    }
+	@media (max-width: toRem(767.98)) {
+		line-height: 1.33;
+	}
 }
 
 %card-item {
@@ -50,106 +51,110 @@ body {
 }
 
 %expand-title {
-    text-align: center;
-    margin: 0 auto toRem(30);
+	text-align: center;
+	margin: 0 auto toRem(30);
 }
 
 %expand-text {
-    overflow: hidden;
-    transition: max-height .6s ease;
+	overflow: hidden;
+	transition: max-height 0.6s ease;
 
-    > p:not(:last-child) {
-        margin-bottom: toRem(10);
-    }
+	> p:not(:last-child) {
+		margin-bottom: toRem(10);
+	}
 }
 
 %expand-showmore-btn {
-    --display: block;
-    --rotate: 0deg;
-    
-    position: relative;
-    display: var(--display);
-    width: toRem(50);
-    height: toRem(50);
-    transform: rotate(var(--rotate));
-    margin: 0 auto;
-    z-index: 1;
+	--display: block;
+	--rotate: 0deg;
 
-    &::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: $yellow;
-        mask: url("../images/showmore.svg");
-        mask-repeat: no-repeat;
-        transition: background-color .3s;
-    }
+	position: relative;
+	display: var(--display);
+	width: toRem(50);
+	height: toRem(50);
+	transform: rotate(var(--rotate));
+	margin: 0 auto;
+	z-index: 1;
 
-    @media (any-hover: hover){
-        &:hover::after {
-            background-color: $dark;
-        }
-    }
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: $yellow;
+		mask: url("../images/showmore.svg");
+		mask-repeat: no-repeat;
+		transition: background-color 0.3s;
+	}
+
+	@media (any-hover: hover) {
+		&:hover::after {
+			background-color: $dark;
+		}
+	}
 }
 
-@mixin expand-content ($bgGradientHeight: 150) {
-    --opacity: 1;
-    --visibility: visible;
+@mixin expand-content($bgGradientHeight: 150) {
+	--opacity: 1;
+	--visibility: visible;
 
-    position: relative;
-    margin: 0 auto;
+	position: relative;
+	margin: 0 auto;
 
-    &::after {
-        content:'';
-        width: 100%;
-        height: toRem($bgGradientHeight);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        opacity: var(--opacity);
-        visibility: var(--visibility);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 33.85%, #fff 72.4%);
-        transition: opacity .3s ease, visibility .3s ease;
-    }
+	&::after {
+		content: "";
+		width: 100%;
+		height: toRem($bgGradientHeight);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: var(--opacity);
+		visibility: var(--visibility);
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 33.85%, #fff 72.4%);
+		transition:
+			opacity 0.3s ease,
+			visibility 0.3s ease;
+	}
 }
 
 .slider-pagination {
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: toRem(10);
+	position: static;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: toRem(10);
 
-    &__bullet {
-        position: relative;
-        width: toRem(15);
-        height: toRem(15);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 0 0 toRem(15);
-        border-radius: 50%;
-        background-color: #fff;
-        border: toRem(2) solid $greyLight;
-        transition: border .3s ease;
-        &::before {
-            content:'';
-            width: 100%;
-            height: 100%;
-            background-color: transparent;
-            position: absolute;
-            border: toRem(2) solid transparent;
-            border-radius: 50%;
-            inset: 0;
-            transition: background-color .3s ease, border .3s ease;
-        }
-        &--active {
-            border: toRem(2) solid #fff;
-            
-            &::before {
-                background-color: $yellow;
-                border: toRem(2) solid #fff;
-            }
-        }
-    }
+	&__bullet {
+		position: relative;
+		width: toRem(15);
+		height: toRem(15);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 toRem(15);
+		border-radius: 50%;
+		background-color: #fff;
+		border: toRem(2) solid $greyLight;
+		transition: border 0.3s ease;
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: transparent;
+			position: absolute;
+			border: toRem(2) solid transparent;
+			border-radius: 50%;
+			inset: 0;
+			transition:
+				background-color 0.3s ease,
+				border 0.3s ease;
+		}
+		&--active {
+			border: toRem(2) solid #fff;
+
+			&::before {
+				background-color: $yellow;
+				border: toRem(2) solid #fff;
+			}
+		}
+	}
 }
