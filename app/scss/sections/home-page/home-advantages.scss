@@ -1,5 +1,5 @@
 .advantages {
-    padding: toRem(70) 0 toRem(40);
+    padding: adaptiveValue(70, 60, 479.98) 0 toRem(40);
     background-color: #fff;
 
     // .advantages__title
@@ -7,6 +7,10 @@
     &__title {
         max-width: toRem(1070);
         @extend %expand-title;
+
+        @media (max-width: toRem(479.98)) {
+            text-align: left;
+        }
     }
 
     // .advantages__content
@@ -15,7 +19,7 @@
         max-width: toRem(1070);
 
         &:not(:last-child) {
-            margin-bottom: toRem(75);
+            margin-bottom: adaptiveValue(75, 60, 767.98);
         }
 
         @include expand-content(140);
@@ -32,38 +36,5 @@
 
     &__show-more {
         @extend %expand-showmore-btn;
-    }
-
-    // .advantages__items
-
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(toRem(300), 1fr));
-        grid-gap: toRem(30);
-    }
-
-    // .advantages__item
-
-    &__item {
-        display: flex;
-        column-gap: toRem(20);
-        align-items: center;
-    }
-
-    // .advantages__item-icon
-
-    &__item-icon {
-        width: toRem(80);
-        height: toRem(80);
-        flex: 0 0 toRem(80);
-        align-self: flex-start;
-    }
-
-    // .advantages__item-text
-
-    &__item-text {
-        font-size: toRem(20);
-        font-weight: 600;
-        line-height: 1.4;
     }
 }
