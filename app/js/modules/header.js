@@ -14,6 +14,7 @@ const header = {
 		const headerActions = (e) => {
 			const targetElement = e.target;
 			const targetTag = targetElement.tagName;
+			const initSpoilersWidthForCatalogHeader = window.matchMedia(`(max-width: ${991.98 / 16}rem)`);
 
 			if (isTouchScreen) {
 				if (targetElement.closest('.lang-header')) {
@@ -22,12 +23,15 @@ const header = {
 				} else {
 					document.querySelector('.lang-header').classList.remove('--active')
 				}
+			}
+
+			if (initSpoilersWidthForCatalogHeader) {
 				if (targetElement.closest('.items-catalog-header__more')) {
 					const targetItem = targetElement.closest('.items-catalog-header__item');
 					const targetActiveItem = document.querySelector('.items-catalog-header__item.--active');
 					targetItem.classList.toggle('--active')
 
-					if (targetItem !== targetActiveItem) {
+					if (targetActiveItem && targetItem !== targetActiveItem) {
 						targetActiveItem.classList.remove('--active')
 					}
 				}
@@ -122,7 +126,7 @@ const header = {
 		}
 	},
 	headerScroll: function () {
-		if (window.scrollY > 1) {
+		if (window.scrollY > 30) {
 			headerEl.classList.add("scroll");
 		} else {
 			headerEl.classList.remove("scroll");
