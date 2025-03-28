@@ -302,7 +302,8 @@
 
     &__header-info {
         display: flex;
-        column-gap: toRem(20);
+        column-gap: adaptiveValue(20, 10);
+        flex: 1 1 auto;
     }
 
     // .slide-review__icon
@@ -324,6 +325,7 @@
         font-size: toRem(17);
         font-weight: 400;
         line-height: 1.41;
+        margin-bottom: toRem(2);
     }
 
     // .slide-review__rating
@@ -368,6 +370,7 @@
         align-items: center;
         column-gap: toRem(10);
         padding-right: toRem(14);
+        margin-top: auto;
 
         @media (any-hover: hover){
             &:hover .slide-review__product-name {
