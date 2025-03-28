@@ -8,8 +8,9 @@
 
 @import "../../node_modules/swiper/swiper-bundle";
 
-//======= Components/Common ==============================================================================================================================================
+//======= Components/Common =======================================================================================================================================
 
+@import "./components/button";
 @import "./helpers/common";
 @import "./components/slider-nav";
 @import "./components/title-header";
@@ -19,7 +20,7 @@
 @import "./components/header";
 @import "./components/footer";
 
-//========= Other (sections/blocks etc.) ===========================================================================================================================================
+//========= Other (sections/blocks etc.) ==========================================================================================================================
 
 @import "./sections/home-page/home-banner-slider";
 @import "./sections/home-page/home-popular-categories";
