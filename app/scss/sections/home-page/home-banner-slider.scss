@@ -1,5 +1,11 @@
 .home-banner {
     padding-top: toRem(30);
+
+    // .home-banner__slider
+
+    &__slider {
+        border-radius: toRem(10);
+    }
     
     // .home-banner__slide-link
 
