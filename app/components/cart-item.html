@@ -1,0 +1,26 @@
+<article class="@@itemCartClass item-cart">
+    <a href="#" class="item-cart__link-image">
+        <img src="../images/home-page/products/01.jpg" alt="Product image" class="item-cart__image">
+    </a>
+    <div class="item-cart__body">
+        <div class="item-cart__size">Розмір: 61 x 184 x 2130 мм</div>
+        <h5 class="item-cart__title">
+            <a href="#" class="item-cart__link-title">
+                Ліжко Спарта / Sparta з підйомним механізмом
+            </a>
+        </h5>
+        <div class="item-cart__stock">В наявності</div>
+    </div>
+    <button class="item-cart__close"></button>
+    <form action="#" class="item-cart__quantity quantity">
+        <button class="quantity__button quantity__button--minus"></button>
+        <input type="number" value="1" minlength="1" class="quantity__input">
+        <button class="quantity__button quantity__button--plus"></button>
+    </form>
+    <div class="item-cart__price price-item-cart">
+        <div class="price-item-cart__current">15 400 грн.</div>
+        @@if (hasOldPrice === true) {
+            <div class="price-item-cart__old">25 400 грн.</div>
+        }
+    </div>
+</article>
