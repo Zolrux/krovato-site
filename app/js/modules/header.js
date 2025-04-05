@@ -79,7 +79,7 @@ const header = {
 				e.preventDefault();
 			} else if (targetElement.closest(".quantity__button.quantity__button--plus")) {
 				const currentInput = targetElement.closest(".quantity__button.quantity__button--plus").previousElementSibling;
-				currentInput.value = ++currentInput.value;
+				currentInput.value = currentInput.value > 0 && ++currentInput.value || 1;
 				e.preventDefault();
 			}
 
