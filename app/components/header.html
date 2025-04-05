@@ -509,54 +509,14 @@
 						<button type="button" class="cart-header__close"></button>
 					</div>
 					<div class="cart-header__items">
-						<article class="cart-header__item item-cart-header">
-							<a href="#" class="item-cart-header__link-image">
-								<img src="../images/home-page/products/01.jpg" alt="Product image" class="item-cart-header__image">
-							</a>
-							<div class="item-cart-header__body">
-								<div class="item-cart-header__size">Розмір: 61 x 184 x 2130 мм</div>
-								<h5 class="item-cart-header__title">
-									<a href="#" class="item-cart-header__link-title">
-										Ліжко Спарта / Sparta з підйомним механізмом
-									</a>
-								</h5>
-								<div class="item-cart-header__stock">В наявності</div>
-							</div>
-							<button class="item-cart-header__close"></button>
-							<form action="#" class="item-cart-header__quantity quantity">
-								<button class="quantity__button quantity__button--minus"></button>
-								<input type="text" value="1" minlength="1" class="quantity__input">
-								<button class="quantity__button quantity__button--plus"></button>
-							</form>
-							<div class="item-cart-header__price price-item-cart-header">
-								<div class="price-item-cart-header__current">15 400 грн.</div>
-								<div class="price-item-cart-header__old">25 400 грн.</div>
-							</div>
-						</article>
-						<article class="cart-header__item item-cart-header">
-							<a href="#" class="item-cart-header__link-image">
-								<img src="../images/home-page/products/01.jpg" alt="Product image" class="item-cart-header__image">
-							</a>
-							<div class="item-cart-header__body">
-								<div class="item-cart-header__size">Розмір: 61 x 184 x 2130 мм</div>
-								<h5 class="item-cart-header__title">
-									<a href="#" class="item-cart-header__link-title">
-										Ліжко Спарта / Sparta з підйомним механізмом
-									</a>
-								</h5>
-								<div class="item-cart-header__stock">В наявності</div>
-							</div>
-							<button class="item-cart-header__close"></button>
-							<form action="#" class="item-cart-header__quantity quantity">
-								<button class="quantity__button quantity__button--minus"></button>
-								<input type="text" value="1" minlength="1" class="quantity__input">
-								<button class="quantity__button quantity__button--plus"></button>
-							</form>
-							<div class="item-cart-header__price price-item-cart-header">
-								<div class="price-item-cart-header__current">15 400 грн.</div>
-								<div class="price-item-cart-header__old">25 400 грн.</div>
-							</div>
-						</article>
+						@@include("cart-item.html", {
+							itemCartClass: "cart-header__item",
+							hasOldPrice: true
+						})
+						@@include("cart-item.html", {
+							itemCartClass: "cart-header__item",
+							hasOldPrice: false
+						})
 					</div>
 					<div class="cart-header__footer">
 						<a href="#" class="cart-header__checkout button">ОФОРМИТИ ЗАМОВЛЕННЯ</a>
