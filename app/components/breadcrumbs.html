@@ -1,0 +1,33 @@
+<div class="breadcrumbs breadcrumbs--margin">
+	<div class="breadcrumbs__container">
+		<ul class="breadcrumbs__list">
+			@@if (firstLink.isLink === true) {
+			<li class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">@@firstLink.value</a>
+			</li>
+			}
+
+			@@if (secondLink.isLink === true) {
+			<li class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">@@secondLink.value</a>
+			</li>
+			}
+			@@if (secondLink.isLink === false) {
+			<li class="breadcrumbs__item">@@secondLink.value</li>
+			}
+
+			@@if (thirdLink.isLink === true && thirdLink.isShow === true) {
+			<li class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">@@thirdLink.value</a>
+			</li>
+			}
+			@@if (thirdLink.isLink === false && thirdLink.isShow === true) {
+				<li class="breadcrumbs__item">@@thirdLink.value</li>
+			}
+
+			@@if (fourthLink.isLink === false && fourthLink.isShow === true) {
+			<li class="breadcrumbs__item">@@fourthLink.value</li>
+			}
+		</ul>
+	</div>
+</div>
