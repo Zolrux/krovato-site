@@ -1,0 +1,38 @@
+.catalog-advantages {
+    max-width: toRem(960);
+    margin: 0 auto;
+    padding-bottom: adaptiveValue(70, 60, 768.98);
+
+    // .catalog-advantages__title
+
+    &__title {
+        @extend %expand-title;
+
+        @media (max-width: toRem(767.98)) {
+              text-align: left;
+        }
+    }
+
+    // .catalog-advantages__content
+
+    &__content {
+        @include expand-content();
+
+        &::after {
+            background: linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 0.8) 33.85%, #f8f8f8 72.4%);
+        }
+    }
+
+    // .catalog-advantages__text
+
+    &__text {
+        max-height: toRem(350);
+        @extend %expand-text;
+    }
+
+    // .catalog-advantages__show-more
+
+    &__show-more {
+        @extend %expand-showmore-btn;
+    }
+}

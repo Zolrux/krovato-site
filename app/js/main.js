@@ -9,10 +9,10 @@ import expandText from "./modules/expand-text";
 import footer from "./modules/footer";
 
 import expandCategories from "./modules/catalog-page/expand-categories";
+import filterCatalog from "./modules/catalog-page/filter-catalog";
+import dropdownSort from "./modules/catalog-page/dropdown-sort";
 
 window.addEventListener("load", () => {
-  header.headerAction();
-  footer();
   
   if (document.querySelector(".page")) {
     homeBannerSlider();
@@ -21,10 +21,17 @@ window.addEventListener("load", () => {
     articlesNewsSlider();
     expandText();
   }
-
-  if (document.querySelector(".catalog-page")) {
+  else if (document.querySelector(".catalog-page")) {
     expandCategories();
+    filterCatalog();
+    dropdownSort();
+    expandText();
+    reviewsSlider();
   }
 
+  // for all pages
+  
+  header.headerAction();
+  footer();
   window.addEventListener("scroll", header.headerScroll);
 });
