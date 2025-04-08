@@ -11,6 +11,7 @@ import footer from "./modules/footer";
 import expandCategories from "./modules/catalog-page/expand-categories";
 import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
+import catalogFaqSpoilers from "./modules/spoilers/catalog-faq-spoilers";
 
 window.addEventListener("load", () => {
   
@@ -27,6 +28,7 @@ window.addEventListener("load", () => {
     dropdownSort();
     expandText();
     reviewsSlider();
+    catalogFaqSpoilers();
   }
 
   // for all pages
