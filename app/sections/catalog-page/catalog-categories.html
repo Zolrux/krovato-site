@@ -78,10 +78,9 @@
 						</a>
 					</li>
 				</ul>
-				<button class="list-category__button" type="button" data-show-hide-btn>
-					<span class="list-category__button-text list-category__button-text--show list-category__button-text--active">Показати підкатегорії</span>
-					<span class="list-category__button-text">Приховати підкатегорії</span>
-				</button>
+				@@include("show-hide-btn.html", {
+					btnClass: "list-category__button"
+				})
 			</div>
 		</div>
 	</div>
