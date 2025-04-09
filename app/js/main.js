@@ -8,7 +8,7 @@ import articlesNewsSlider from "./modules/sliders/articles-news-slider";
 import expandText from "./modules/expand-text";
 import footer from "./modules/footer";
 
-import expandCategories from "./modules/catalog-page/expand-categories";
+import showHide from "./modules/show-hide";
 import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
 import catalogFaqSpoilers from "./modules/spoilers/catalog-faq-spoilers";
@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
     expandText();
   }
   else if (document.querySelector(".catalog-page")) {
-    expandCategories();
+    showHide();
     filterCatalog();
     dropdownSort();
     expandText();
