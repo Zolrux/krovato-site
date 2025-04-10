@@ -13,6 +13,7 @@ import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
 import catalogFaqSpoilers from "./modules/spoilers/catalog-faq-spoilers";
 
+import deliveryToggle from "./modules/checkout-page/delivery-toggle";
 import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
 
 window.addEventListener("load", () => {
@@ -33,6 +34,7 @@ window.addEventListener("load", () => {
     catalogFaqSpoilers();
   }
   else if (document.querySelector(".checkout-page")) {
+    deliveryToggle();
     cartOrderItemQuantity();
   }
 
