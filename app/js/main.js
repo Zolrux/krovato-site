@@ -30,6 +30,9 @@ window.addEventListener("load", () => {
     reviewsSlider();
     catalogFaqSpoilers();
   }
+  else if (document.querySelector(".about-page")) {
+    reviewsSlider();
+  }
 
   // for all pages
   
