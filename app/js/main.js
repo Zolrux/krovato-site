@@ -36,6 +36,7 @@ window.addEventListener("load", () => {
   else if (document.querySelector(".checkout-page")) {
     deliveryToggle();
     cartOrderItemQuantity();
+    showHide();
   }
 
   // for all pages
