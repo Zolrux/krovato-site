@@ -1,0 +1,53 @@
+.about-us {
+
+    // .about-us__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+        column-gap: toRem(15);
+    }
+
+    // .about-us__content
+
+    &__content {
+        max-width: toRem(450);
+        padding: toRem(20) 0 toRem(20) toRem(50);
+    }
+
+    // .about-us__title
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: toRem(30);
+        }
+    }
+
+    // .about-us__text
+
+    &__text {
+        font-size: toRem(20);
+        line-height: 1.4;
+        font-weight: 600;
+
+        &:not(:last-child) {
+            margin-bottom: toRem(20);
+        }
+
+        &--big {
+            font-size: toRem(26);
+            line-height: 1.31;
+        }
+    }
+
+    // .about-us__image
+
+    &__image {
+        flex: 0 1 auto;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
