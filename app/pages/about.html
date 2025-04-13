@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("head.html")
+  <body>
+    <div class="wrapper">
+      @@include("header.html")
+      <main class="about-page">
+        @@include("breadcrumbs.html", {
+			firstLink: {
+			  isLink: true,
+			  value: "Головна"
+			},
+			secondLink: {
+			  isLink: false,
+			  value: "Про нас"
+			},
+			thirdLink: {
+			  isLink: false,
+			  value: "",
+			  isShow: false
+			},
+			fourthLink: {
+			  isLink: false,
+			  value: "",
+			  isShow: false
+			}
+		  }
+		)
+        @@include("../sections/about-page/about-us.html")
+      </main>
+      @@include("footer.html")
+    </div>
+    @@include("js.html")
+  </body>
+</html>
