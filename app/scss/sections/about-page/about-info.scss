@@ -1,9 +1,12 @@
 .about-info {
-    padding-bottom: toRem(70);
+    padding-bottom: adaptiveValue(70, 60, 767.98);
 
     // .about-info__title
 
     &__title {
+        font-weight: 600;
+        font-size: toRem(40);
+        line-height: 1.2;
         text-align: center;
 
         &:not(:last-child) {
@@ -17,6 +20,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
         grid-gap: toRem(30);
+
+        @media (max-width: toRem(479.98)) {
+              grid-template-columns: auto;
+        }
     }
 }
 
