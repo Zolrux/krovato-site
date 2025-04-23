@@ -13,6 +13,8 @@ import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
 import catalogFaqSpoilers from "./modules/spoilers/catalog-faq-spoilers";
 
+import deliveryFaqSpoilers from "./modules/spoilers/delivery-faq-spoilers";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -29,6 +31,9 @@ window.addEventListener("load", () => {
     expandText();
     reviewsSlider();
     catalogFaqSpoilers();
+  }
+  else if (document.querySelector(".delivery-page")) {
+    deliveryFaqSpoilers();
   }
 
   // for all pages
