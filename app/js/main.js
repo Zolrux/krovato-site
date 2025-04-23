@@ -13,6 +13,10 @@ import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
 import catalogFaqSpoilers from "./modules/spoilers/catalog-faq-spoilers";
 
+import productSliders from "./modules/sliders/product-sliders";
+import phoneMask from "./modules/product-page/phone-mask";
+import moveElements from "./modules/product-page/move-elements";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -30,6 +34,11 @@ window.addEventListener("load", () => {
     reviewsSlider();
     catalogFaqSpoilers();
   }
+  else if (document.querySelector(".product-page")) {
+	productSliders();
+	phoneMask();
+	moveElements();
+}
 
   // for all pages
   

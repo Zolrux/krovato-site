@@ -34,6 +34,11 @@ body {
 	font-weight: 600;
 	line-height: 1.2;
 
+	&--min {
+		line-height: 1.39;
+		font-size: adaptiveValue(30, 25, 479.98);
+	}
+
 	@media (max-width: toRem(767.98)) {
 		line-height: 1.33;
 	}
@@ -113,6 +118,51 @@ body {
 		transition:
 			opacity 0.3s ease,
 			visibility 0.3s ease;
+	}
+}
+
+.quantity {
+	display: flex;
+	background-color: $light;
+	border: toRem(1) solid $greyLight;
+	border-radius: toRem(8);
+	min-height: toRem(50);
+	padding-inline: toRem(15);
+	overflow: hidden;
+	// .quantity__button
+	&__button {
+		inline-size: toRem(24);
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::before {
+			content: "";
+			block-size: toRem(10);
+			aspect-ratio: 1 / 1;
+			mask-repeat: no-repeat;
+			mask-position: center;
+			mask-size: toRem(10);
+			background-color: $grey;
+		}
+		// .quantity__button--minus
+		&--minus {
+			&::before {
+				mask-image: url("../../images/header/minus.svg");
+			}
+		}
+		// .quantity__button--plus
+		&--plus {
+			&::before {
+				mask-image: url("../../images/header/plus.svg");
+			}
+		}
+	}
+	// .quantity__input
+	&__input {
+		text-align: center;
+		font-weight: 600;
+		font-size: toRem(20);
 	}
 }
 
@@ -225,5 +275,49 @@ body {
 	&__text {
 		overflow: hidden;
 		line-height: 1.87;
+	}
+}
+
+.rating {
+	display: flex;
+	column-gap: toRem(10);
+	// .rating__stars
+	&__stars {
+		display: flex;
+		gap: toRem(4);
+	}
+	// .rating__star
+	&__star {
+		block-size: toRem(20);
+		inline-size: toRem(20);
+	}
+	// .rating__reviews
+	&__reviews {
+		display: flex;
+		gap: toRem(5);
+		font-size: toRem(17);
+		color: $grey;
+		transition: all 0.3s;
+		line-height: 1.2;
+		&::before {
+			content: "";
+			flex-shrink: 0;
+			background: url("../../../images/reviews/review-all.svg") 0 0 / 20px no-repeat;
+			aspect-ratio: 1 / 1;
+			flex-basis: toRem(20);
+			inline-size: toRem(20);
+		}
+		@media (any-hover: hover) {
+			&:hover:not(&--grade) {
+				color: $dark;
+				text-underline-offset: 3px;
+				text-decoration: underline;
+			}
+		}
+		&--grade {
+			&::before {
+				display: none;
+			}
+		}
 	}
 }

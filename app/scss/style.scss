@@ -23,6 +23,7 @@
 @import "./components/footer";
 @import "./components/advantages";
 @import "./components/breadcrumbs";
+@import "./components/review-form";
 @import "./components/cart-item";
 @import "./components/show-hide-btn";
 
@@ -42,3 +43,10 @@
 @import "./sections/catalog-page/catalog-block";
 @import "./sections/catalog-page/catalog-advantages";
 @import "./sections/catalog-page/catalog-faq";
+
+//================================================================================================================================================================
+
+@import "./sections/product-page/product-main";
+@import "./sections/product-page/product-terms";
+@import "./sections/product-page/product-info";
+@import "./sections/product-page/product-recommended-products";

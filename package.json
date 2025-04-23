@@ -28,7 +28,9 @@
   },
   "dependencies": {
     "accordion-js": "^3.4.0",
+    "inputmask": "^5.0.9",
     "nouislider": "^15.8.1",
-    "swiper": "^11.2.5"
+    "swiper": "^11.2.5",
+    "transfer-elements": "^1.0.7"
   }
 }
