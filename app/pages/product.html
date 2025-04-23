@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("head.html")
+  <body>
+    <div class="wrapper">
+      @@include("header.html")
+      <main class="product-page">
+		 @@include("breadcrumbs.html", {
+			firstLink: {
+			  isLink: true,
+			  value: "Головна"
+			},
+			secondLink: {
+			  isLink: true,
+			  value: "Ліжка"
+			},
+			thirdLink: {
+			  isLink: true,
+			  value: "М'які ліжка",
+			  isShow: true
+			},
+			fourthLink: {
+			  isLink: false,
+			  value: "Двоспальне ліжко з підйомним механізмом Сіті",
+			  isShow: true
+			}
+		  }
+		)
+		@@include("../sections/product-page/product-main.html")
+		@@include("../sections/product-page/product-terms.html")
+		@@include("../sections/product-page/product-info.html")
+		@@include("../sections/product-page/product-recommended-products.html")
+      </main>
+      @@include("footer.html")
+    </div>
+    @@include("js.html")
+  </body>
+</html>
