@@ -1,5 +1,5 @@
 .delivery-stock {
-    padding-bottom: toRem(70);
+    padding-bottom: adaptiveValue(70, 60, 767.98);
     text-align: center;
 
     // .delivery-stock__title
@@ -20,16 +20,6 @@
         &:not(:last-child) {
             margin-bottom: toRem(40);
         }
-    }
-
-    // .delivery-stock__item
-
-    &__item {
-    }
-
-    // .delivery-stock__disclaimer
-
-    &__disclaimer {
     }
 }
 
