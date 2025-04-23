@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("head.html")
+<body>
+    <div class="wrapper">
+    @@include("header.html")
+    <main class="blog-article-page">
+        @@include("breadcrumbs.html", {
+            firstLink: {
+                isLink: true,
+                value: "Головна"
+            },
+            secondLink: {
+                isLink: true,
+                value: "Блог"
+            },
+            thirdLink: {
+                isLink: false,
+                value: "Оформлення вітальні. Які м'які меблі краще вибрати?",
+                isShow: true
+            },
+            fourthLink: {
+                isLink: false,
+                value: "",
+                isShow: false
+            }
+        }
+        )
+        @@include("../sections/blog-article-page/blog-article.html")
+    </main>
+    @@include("footer.html")
+    </div>
+    @@include("js.html")
+</body>
+</html>
