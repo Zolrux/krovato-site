@@ -5,8 +5,8 @@
 			<div class="category__more"><span>1 147</span> товарів</div>
 		</div>
 		<div class="category__list list-category">
-			<div class="list-category__body">
-				<ul class="list-category__items">
+			<div class="list-category__body" data-show-hide-wrapper>
+				<ul class="list-category__items" data-show-hide-content>
 					<li class="list-category__item item-list-category">
 						<a href="#" class="item-list-category__link">
 							<span class="item-list-category__name">Односпальні ліжка</span>
@@ -78,10 +78,9 @@
 						</a>
 					</li>
 				</ul>
-				<button class="list-category__button" type="button">
-					<span class="list-category__button-text list-category__button-text--show list-category__button-text--active">Показати підкатегорії</span>
-					<span class="list-category__button-text">Приховати підкатегорії</span>
-				</button>
+				@@include("show-hide-btn.html", {
+					btnClass: "list-category__button"
+				})
 			</div>
 		</div>
 	</div>
