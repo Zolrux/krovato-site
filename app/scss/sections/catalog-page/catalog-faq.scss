@@ -1,0 +1,20 @@
+.faq {
+	padding-top: adaptiveValue(70, 40);
+	padding-bottom: adaptiveValue(40, 25);
+	// .faq__container
+	&__container {
+	}
+	// .faq__title
+	&__title {
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: adaptiveValue(40, 25);
+		}
+	}
+	// .faq__items
+	&__items {
+		max-width: toRem(1070);
+		margin: 0 auto;
+		padding-bottom: adaptiveValue(70, 40);
+	}
+}

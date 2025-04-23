@@ -27,6 +27,8 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "accordion-js": "^3.4.0",
+    "nouislider": "^15.8.1",
     "swiper": "^11.2.5"
   }
 }
