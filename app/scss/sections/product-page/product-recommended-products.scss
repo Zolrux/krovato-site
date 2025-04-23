@@ -1,0 +1,22 @@
+.recommended-products {
+	padding-block-end: adaptiveValue(40, 25);
+	// .recommended-products__container
+	&__container {
+	}
+	// .recommended-products__title
+	&__title {
+		margin-block-end: adaptiveValue(40, 25);
+	}
+	// .recommended-products__cards
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+		grid-gap: toRem(30);
+		&:not(:last-child) {
+			margin-block-end: adaptiveValue(70, 40, 767.98);
+		}
+		@media (max-width: toRem(479.98)) {
+			grid-template-columns: 1fr;
+		}
+	}
+}
