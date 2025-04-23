@@ -1,0 +1,13 @@
+<div class="recommended-products _content-padding">
+	<div class="recommended-products__container">
+		<h2 class="recommended-products__title title">Відмінно дополняють спальню тумба або комод</h2>
+		<div class="recommended-products__cards">
+			@@loop("product-card.html", "../components/data/product-cards.json")
+		</div>
+		<h2 class="recommended-products__title title">Рекомендовані товари</h2>
+		<div class="recommended-products__cards">
+			@@loop("product-card.html", "../components/data/product-cards.json")
+		</div>
+		@@include("advantages.html")
+	</div>
+</div>
