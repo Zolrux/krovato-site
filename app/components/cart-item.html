@@ -11,12 +11,12 @@
         </h5>
         <div class="item-cart__stock">В наявності</div>
     </div>
-    <button class="item-cart__close"></button>
-    <form action="#" class="item-cart__quantity quantity">
-        <button class="quantity__button quantity__button--minus"></button>
+    <button type="button" class="item-cart__close"></button>
+    <div class="item-cart__quantity quantity">
+        <button type="button" class="quantity__button quantity__button--minus"></button>
         <input type="number" value="1" minlength="1" class="quantity__input">
-        <button class="quantity__button quantity__button--plus"></button>
-    </form>
+        <button type="button" class="quantity__button quantity__button--plus"></button>
+    </div>
     <div class="item-cart__price price-item-cart">
         <div class="price-item-cart__current">15 400 грн.</div>
         @@if (hasOldPrice === true) {

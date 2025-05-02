@@ -1,0 +1,212 @@
+<section class="order">
+    <div class="order__container">
+        <h1 class="order__title title">Оформлення замовлення</h1>
+        <form class="order__form form-order">
+            <div class="form-order__body">
+                <fieldset class="form-order__fieldset">
+                    <legend class="form-order__title">
+                        <div class="form-order__icon">
+                            <img src="../images/checkout-page/info.svg" alt="info icon">
+                        </div>
+                        Інформація про покупця
+                    </legend>
+                    <div class="form-order__inputs">
+                        <input type="text" class="form-order__input form-order__input--surname" placeholder="Прізвище">
+                        <input type="tel" class="form-order__input form-order__input--phone" placeholder="Контактний телефон">
+                        <input type="text" class="form-order__input form-order__input--name" placeholder="Ім’я">
+                        <input type="email" class="form-order__input form-order__input--email" placeholder="E-mail">
+                        <input type="text" class="form-order__input form-order__input--patronymic" placeholder="По батькові">
+                    </div>
+                    <label for="order-type-other-human" class="form-order__label checkout-order checkout-order--align-self">
+                        <input id="order-type-other-human" name="order-type-other-human" type="checkbox" class="checkout-order__checkbox">
+                        <span class="checkout-order__text">Отримуватиме замовлення інша людина</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-order__fieldset">
+                    <legend class="form-order__title">
+                        <div class="form-order__icon">
+                            <img src="../images/checkout-page/order-type.svg" alt="order type icon">
+                        </div>
+                        Вибір способу доставки
+                    </legend>
+                    <div class="form-order__type-wrapper">
+                        <label for="order-type-self-pickup" class="form-order__label order-type order-type--self-pickup">
+                            <input id="order-type-self-pickup" name="order-type" type="radio" class="order-type__radio" data-radio-order-name="self pickup" checked>
+                            <div class="order-type__content">
+                                <div class="order-type__icon-wrapper">
+                                    <img class="order-type__icon" src="../images/checkout-page/self-pickup.svg" alt="self pickup icon">
+                                    <img class="order-type__icon--check" src="../images/checkout-page/order-type-check.svg" alt="order type check icon">
+                                </div>
+                                <div class="order-type__title">Самовивіз із магазину</div>
+                                <div class="order-type__sub-title">Бесплатно</div>
+                            </div>
+                        </label>
+                        <label for="order-type-nova-post" class="form-order__label order-type order-type--nova-post">
+                            <input id="order-type-nova-post" name="order-type" type="radio" class="order-type__radio" data-radio-order-name="nova post">
+                            <div class="order-type__content">
+                                <div class="order-type__icon-wrapper">
+                                    <img class="order-type__icon" src="../images/checkout-page/nova-post.svg" alt="nova post icon">
+                                    <img class="order-type__icon--check" src="../images/checkout-page/order-type-check.svg" alt="order type check icon">
+                                </div>
+                                <div class="order-type__title">Доставка Нова Пошта</div>
+                                <div class="order-type__sub-title">≈ від 500 грн</div>
+                            </div>
+                        </label>
+                        <label for="order-type-delivery" class="form-order__label order-type order-type--delivery">
+                            <input id="order-type-delivery" name="order-type" type="radio" class="order-type__radio" data-radio-order-name="delivery">
+                            <div class="order-type__content">
+                                <div class="order-type__icon-wrapper">
+                                    <img class="order-type__icon" src="../images/checkout-page/delivery.svg" alt="delivery icon">
+                                    <img class="order-type__icon--check" src="../images/checkout-page/order-type-check.svg" alt="order type check icon">
+                                </div>
+                                <div class="order-type__title">Доставка кур'єром</div>
+                                <div class="order-type__sub-title">≈ від 200 грн</div>
+                            </div>
+                        </label>
+                        <div class="form-order__info info-form-order info-form-order--self-pickup info-form-order--showed" data-radio-order-info="self pickup">
+                            <div class="info-form-order__icon">
+                                <img src="../images/checkout-page/location.svg" alt="location icon">
+                            </div>
+                            <div class="info-form-order__text">
+                                <time class="info-form-order__schedule">Графік роботи: щодня з 9:00 до 18:00</time>
+                                <address class="info-form-order__address">м. Київ, пров. Ізяславський 52, пов. 2</address>
+                            </div>
+                            <a href="#" class="info-form-order__btn button">На мапі</a>
+                        </div>
+                        <div class="form-order__info info-form-order info-form-order--nova-post" data-radio-order-info="nova post">
+                            <div class="info-form-order__icon">
+                                <img src="../images/checkout-page/location.svg" alt="location icon">
+                            </div>
+                            <div class="info-form-order__text">Відділення по всій Україні</div>
+                            <a href="#" class="info-form-order__btn button">Відділення</a>
+                        </div>
+                        <div class="form-order__info info-form-order info-form-order--delivery" data-radio-order-info="delivery">
+                            <div class="info-form-order__icon">
+                                <img src="../images/checkout-page/location.svg" alt="location icon">
+                            </div>
+                            <div class="info-form-order__text">
+                                <time class="info-form-order__schedule">Графік роботи: пн-пт з 9:00 до 18:00</time>
+                            </div>
+                            <a href="#" class="info-form-order__btn button">Дата доставки</a>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-order__fieldset">
+                    <legend class="form-order__title">
+                        <div class="form-order__icon">
+                            <img src="../images/checkout-page/payment-type.svg" alt="payment icon">
+                        </div>
+                        Вибір способу оплати
+                    </legend>
+                    <div class="form-order__payment-type-wrapper">
+                        <label for="payment-type-cash" class="form-order__label payment-type">
+                            <input id="payment-type-cash" name="payment-type" type="radio" class="payment-type__radio" checked>
+                            <div class="payment-type__text">Готівкою при отриманні (Післясплата)</div>
+                        </label>
+                        <label for="payment-type-credit-card" class="form-order__label payment-type">
+                            <input id="payment-type-credit-card" name="payment-type" type="radio" class="payment-type__radio">
+                            <div class="payment-type__text">
+                                <span>Оплата карткою на сайті</span>
+                                <img src="../images/checkout-page/mastercard.svg" class="payment-type__icon" alt="mastercard icon">
+                                <img src="../images/checkout-page/visa.svg" class="payment-type__icon" alt="visa icon">
+                            </div>
+                        </label>
+                        <label for="payment-type-privat-pay" class="form-order__label payment-type">
+                            <input id="payment-type-privat-pay" name="payment-type" type="radio" class="payment-type__radio">
+                            <div class="payment-type__text">
+                                <span>Privat Pay</span>
+                                <img src="../images/checkout-page/privat-pay.svg" class="payment-type__icon" alt="mastercard icon">
+                            </div>
+                        </label>
+                        <label for="payment-type-credit" class="form-order__label payment-type">
+                            <input id="payment-type-credit" name="payment-type" type="radio" class="payment-type__radio">
+                            <div class="payment-type__text">Кредит від Krovato</div>
+                        </label>
+                        <label for="payment-type-privat-credit" class="form-order__label payment-type">
+                            <input id="payment-type-privat-credit" name="payment-type" type="radio" class="payment-type__radio">
+                            <div class="payment-type__text">
+                                <span>Оплата частинами ПриватБанк</span>
+                                <img src="../images/checkout-page/privat-credit.svg" class="payment-type__icon" alt="privat credit icon">
+                            </div>
+                        </label>
+                        <label for="payment-type-mono-credit" class="form-order__label payment-type">
+                            <input id="payment-type-mono-credit" name="payment-type" type="radio" class="payment-type__radio">
+                            <div class="payment-type__text">
+                                <span>Оплата частинами МоноБанк</span>
+                                <img src="../images/checkout-page/mono-credit.svg" class="payment-type__icon" alt="mono credit icon">
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-order__fieldset">
+                    <legend class="form-order__title">
+                        <div class="form-order__icon">
+                            <img src="../images/checkout-page/comment.svg" alt="comment icon">
+                        </div>
+                        Коментар до замовлення
+                    </legend>
+                    <textarea class="form-order__comment" name="form-order-comment" placeholder="Ваш коментар"></textarea>
+                </fieldset>
+            </div>
+            <div class="order__cart cart-order">
+                <div class="cart-order__body">
+                    <h4 class="cart-order__title">Ваш кошик <span class="cart-order__count">4</span></h4>
+                    <div class="cart-order__wrapper" data-show-hide-wrapper>
+                        <div class="cart-order__items" data-show-hide-content>
+                            @@include("cart-item.html", {
+                                itemCartClass: "cart-order__item",
+                                hasOldPrice: true
+                            })
+                            @@include("cart-item.html", {
+                                itemCartClass: "cart-order__item",
+                                hasOldPrice: false
+                            })
+                            @@include("cart-item.html", {
+                                itemCartClass: "cart-order__item",
+                                hasOldPrice: false
+                            })
+                        </div>
+                        @@include("show-hide-btn.html", {
+                            btnClass: "cart-order__button"
+                        })
+                    </div>
+                </div>
+                <div class="cart-order__footer">
+                    <fieldset class="cart-order__promo">
+                        <div class="cart-order__promo-text">Є промокод?</div>
+                        <div class="cart-order__promo-actions">
+                            <input type="text" class="cart-order__promo-input" placeholder="Введіть код">
+                            <button type="button" class="cart-order__promo-btn button">ок</button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="cart-order__total">
+                        <legend class="cart-order__total-title">Разом:</legend>
+                        <dl class="cart-order__total-list">
+                            <div class="cart-order__total-wrapper">
+                                <dt class="cart-order__total-term">4 товари на суму:</dt>
+                                <dd class="cart-order__total-value">540 269 грн.</dd>
+                            </div>
+                            <div class="cart-order__total-wrapper">
+                                <dt class="cart-order__total-term">Вартість доставки:</dt>
+                                <dd class="cart-order__total-value">За тарифами оператора</dd>
+                            </div>
+                            <div class="cart-order__total-wrapper">
+                                <dt class="cart-order__total-term">До оплати:</dt>
+                                <dd class="cart-order__total-value cart-order__total-value--big">540 269 грн.</dd>
+                            </div>
+                        </dl>
+                        <label for="order-callback" class="cart-order__total-label checkout-order checkout-order--align-self">
+                            <input id="order-callback" name="order-callback" type="checkbox" class="checkout-order__checkbox">
+                            <span class="cart-order__total-checkbox-text checkout-order__text">Не передзвонюйте мені для підтвердження замовлення</span>
+                        </label>
+                        <button type="submit" class="cart-order__btn button">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+                        <div class="cart-order__conditions">
+                            Підтверджуючи замовлення, я приймаю умови <a href="#" class="cart-order__conditions-link">Угоди користувача</a>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+        @@include("advantages.html")
+    </div>
+</section>

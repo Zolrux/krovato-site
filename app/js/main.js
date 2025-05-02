@@ -17,6 +17,9 @@ import productSliders from "./modules/sliders/product-sliders";
 import phoneMask from "./modules/product-page/phone-mask";
 import moveElements from "./modules/product-page/move-elements";
 
+import deliveryToggle from "./modules/checkout-page/delivery-toggle";
+import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -38,7 +41,12 @@ window.addEventListener("load", () => {
 	productSliders();
 	phoneMask();
 	moveElements();
-}
+  }
+  else if (document.querySelector(".checkout-page")) {
+    deliveryToggle();
+    cartOrderItemQuantity();
+    showHide();
+  }
 
   // for all pages
   

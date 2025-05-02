@@ -1,3 +1,5 @@
+import { cartItemQuantityActions } from "./cart-item-quantity";
+
 const headerEl = document.querySelector(".header");
 
 const header = {
@@ -73,15 +75,7 @@ const header = {
 				document.documentElement.classList.remove("cart-open");
 			}
 
-			if (targetElement.closest(".quantity__button.quantity__button--minus")) {
-				const currentInput = targetElement.closest(".quantity__button.quantity__button--minus").nextElementSibling;
-				currentInput.value = currentInput.value - 1 > 0 ? currentInput.value - 1 : 1;
-				e.preventDefault();
-			} else if (targetElement.closest(".quantity__button.quantity__button--plus")) {
-				const currentInput = targetElement.closest(".quantity__button.quantity__button--plus").previousElementSibling;
-				currentInput.value = currentInput.value > 0 && ++currentInput.value || 1;
-				e.preventDefault();
-			}
+			cartItemQuantityActions(targetElement, e);
 
 		};
 		headerEl.addEventListener("click", headerActions);
