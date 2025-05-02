@@ -47,6 +47,9 @@ window.addEventListener("load", () => {
     cartOrderItemQuantity();
     showHide();
   }
+  else if (document.querySelector(".about-page")) {
+    reviewsSlider();
+  }
 
   // for all pages
   
