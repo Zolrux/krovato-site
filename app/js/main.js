@@ -22,6 +22,8 @@ import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
 
 import paymentInfoFaqSpoilers from "./modules/spoilers/payment-info-faq-spoilers";
 
+import deliveryFaqSpoilers from "./modules/spoilers/delivery-faq-spoilers";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -40,9 +42,9 @@ window.addEventListener("load", () => {
     catalogFaqSpoilers();
   }
   else if (document.querySelector(".product-page")) {
-	productSliders();
-	phoneMask();
-	moveElements();
+    productSliders();
+    phoneMask();
+    moveElements();
   }
   else if (document.querySelector(".checkout-page")) {
     deliveryToggle();
@@ -53,7 +55,10 @@ window.addEventListener("load", () => {
     reviewsSlider();
   }
   else if (document.querySelector(".payment-page")) {
-	paymentInfoFaqSpoilers();
+	  paymentInfoFaqSpoilers();
+  }
+  else if (document.querySelector(".delivery-page")) {
+    deliveryFaqSpoilers();
   }
 
   // for all pages

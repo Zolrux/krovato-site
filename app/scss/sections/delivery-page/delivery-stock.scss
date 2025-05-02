@@ -1,0 +1,43 @@
+.delivery-stock {
+    padding-bottom: adaptiveValue(70, 60, 767.98);
+    text-align: center;
+
+    // .delivery-stock__title
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: toRem(40);
+        }
+    }
+
+    // .delivery-stock__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(toRem(234), 1fr));
+        grid-gap: toRem(30);
+
+        &:not(:last-child) {
+            margin-bottom: toRem(40);
+        }
+    }
+}
+
+.item-delivery-stock {
+
+    // .item-delivery-stock__icon
+
+    &__icon {
+        &:not(:last-child) {
+            margin-bottom: toRem(20);
+        }
+    }
+
+    // .item-delivery-stock__description
+
+    &__description {
+        font-size: toRem(20);
+        font-weight: 600;
+        line-height: 1.4;
+    }
+}

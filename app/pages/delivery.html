@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("head.html")
+  <body>
+    <div class="wrapper">
+      @@include("header.html")
+      <main class="delivery-page">
+        @@include("breadcrumbs.html", {
+			firstLink: {
+			  isLink: true,
+			  value: "Головна"
+			},
+			secondLink: {
+			  isLink: false,
+			  value: "Доставка та збірка"
+			},
+			thirdLink: {
+			  isLink: false,
+			  value: "",
+			  isShow: false
+			},
+			fourthLink: {
+			  isLink: false,
+			  value: "",
+			  isShow: false
+			}
+		  }
+		)
+        @@include("../sections/delivery-page/delivery-service.html")
+        @@include("../sections/delivery-page/delivery-kyiv.html")
+        @@include("../sections/delivery-page/delivery-ukraine.html")
+        @@include("../sections/delivery-page/delivery-stock.html")
+        @@include("../sections/delivery-page/delivery-extra-services.html")
+        @@include("../sections/delivery-page/delivery-faq.html")
+      </main>
+      @@include("footer.html")
+    </div>
+    @@include("js.html")
+  </body>
+</html>
