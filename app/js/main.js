@@ -17,6 +17,8 @@ import productSliders from "./modules/sliders/product-sliders";
 import phoneMask from "./modules/product-page/phone-mask";
 import moveElements from "./modules/product-page/move-elements";
 
+import paymentInfoFaqSpoilers from "./modules/spoilers/payment-info-faq-spoilers";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -38,6 +40,9 @@ window.addEventListener("load", () => {
 	productSliders();
 	phoneMask();
 	moveElements();
+  }
+  else if (document.querySelector(".payment-page")) {
+	paymentInfoFaqSpoilers();
 }
 
   // for all pages
