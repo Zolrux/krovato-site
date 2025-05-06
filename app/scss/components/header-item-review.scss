@@ -1,0 +1,63 @@
+.header-item-review {
+	display: flex;
+	align-items: center;
+	column-gap: toRem(15);
+	column-gap: toRem(10);
+	flex-wrap: wrap;
+
+	&:not(:last-child) {
+		margin-block-end: toRem(20);
+	}
+
+	// .header-item-review__user
+
+	&__user {
+		flex-grow: 1;
+	}
+}
+
+.user-review {
+	display: flex;
+	align-items: center;
+	gap: toRem(20);
+
+	// .user-review__icon
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background-color: #fff;
+		flex-shrink: 0;
+		inline-size: toRem(50);
+		border: toRem(1) solid $yellow;
+		aspect-ratio: 1;
+		&::before {
+			content: "";
+			inline-size: toRem(20);
+			aspect-ratio: 1 / 1;
+			transition: background-color 0.3s ease-in;
+			mask-image: url("../../../images/reviews/user.svg");
+			mask-size: toRem(20);
+			mask-repeat: no-repeat;
+			background-color: $dark;
+		}
+		&--admin {
+			&::before {
+				align-self: flex-end;
+				mask-image: url("../../../images/reviews/sofa.svg");
+				inline-size: toRem(35);
+				mask-size: toRem(35);
+				background-color: $yellow;
+			}
+		}
+	}
+
+	// .user-review__name
+
+	&__name {
+		font-size: toRem(17);
+		line-height: 1.41;
+	}
+}
