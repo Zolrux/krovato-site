@@ -1,0 +1,74 @@
+<div class="@@itemClass header-item-review">
+    <div class="header-item-review__user user-review">
+        <div class="user-review__icon"></div>
+        <h6 class="user-review__name">@@fullname</h6>
+    </div>
+    <div class="header-item-review__rating rating">
+        <div class="rating__stars">
+            @@if (ratingValue === 1) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 1.5) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-half-fill-review.svg" class="rating__star" alt="half fill star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 2) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 2.5) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-half-fill-review.svg" class="rating__star" alt="half fill star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 3) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 3.5) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-half-fill-review.svg" class="rating__star" alt="half fill star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 4) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-empty-review.svg" class="rating__star" alt="empty star icon"></img>
+            }
+            @@if (ratingValue === 4.5) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-half-fill-review.svg" class="rating__star" alt="half fill star icon"></img>
+            }
+            @@if (ratingValue === 5) {
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+                <img src="../images/reviews/star-fill-review.svg" class="rating__star" alt="star icon"></img>
+            }
+        </div>
+    </div>
+    <time datetime="@@reviewDate" class="header-item-review__date">@@reviewDate</time>
+</div>
