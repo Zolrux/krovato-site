@@ -1,0 +1,63 @@
+.company-info {
+    display: flex;
+    column-gap: toRem(32);
+
+    // .company-info__icon
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: toRem(80);
+        height: toRem(80);
+        flex: 0 0 toRem(80);
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    // .company-info__title
+
+    &__title {
+        font-size: toRem(20);
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    // .company-info__rating
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        column-gap: toRem(12);
+    }
+
+    // .company-info__value
+
+    &__value {
+        font-weight: 600;
+        font-size: toRem(19);
+        line-height: 1.26;
+        color: #FF9900;
+    }
+
+    // .company-info__stars
+
+    &__stars {
+        display: flex;
+        column-gap: toRem(2);
+
+        img {
+            width: toRem(20);
+            height: toRem(20);
+        }
+    }
+
+    // .company-info__quantity
+
+    &__quantity {
+        font-weight: 300;
+        font-size: toRem(13);
+        line-height: 1.69;
+        color: $grey;
+    }
+}
