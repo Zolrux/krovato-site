@@ -7,11 +7,11 @@ import reviewsSlider from "./modules/sliders/reviews-slider";
 import articlesNewsSlider from "./modules/sliders/articles-news-slider";
 import expandText from "./modules/expand-text";
 import footer from "./modules/footer";
+import faqSpoilers from "./modules/faq-spoilers";
 
 import showHide from "./modules/show-hide";
 import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
-import catalogFaqSpoilers from "./modules/spoilers/catalog-faq-spoilers";
 
 import productSliders from "./modules/sliders/product-sliders";
 import phoneMask from "./modules/product-page/phone-mask";
@@ -19,10 +19,6 @@ import moveElements from "./modules/product-page/move-elements";
 
 import deliveryToggle from "./modules/checkout-page/delivery-toggle";
 import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
-
-import paymentInfoFaqSpoilers from "./modules/spoilers/payment-info-faq-spoilers";
-
-import deliveryFaqSpoilers from "./modules/spoilers/delivery-faq-spoilers";
 
 window.addEventListener("load", () => {
   
@@ -39,7 +35,7 @@ window.addEventListener("load", () => {
     dropdownSort();
     expandText();
     reviewsSlider();
-    catalogFaqSpoilers();
+    faqSpoilers();
   }
   else if (document.querySelector(".product-page")) {
     productSliders();
@@ -55,10 +51,10 @@ window.addEventListener("load", () => {
     reviewsSlider();
   }
   else if (document.querySelector(".payment-page")) {
-	  paymentInfoFaqSpoilers();
+	  faqSpoilers();
   }
   else if (document.querySelector(".delivery-page")) {
-    deliveryFaqSpoilers();
+    faqSpoilers();
   }
 
   // for all pages
