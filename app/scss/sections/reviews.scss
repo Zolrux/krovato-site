@@ -125,71 +125,9 @@
     // .info-reviews__top
 
     &__top {
-        display: flex;
-        column-gap: toRem(32);
-
         &:not(:last-child) {
             margin-bottom: toRem(10);
         }
-    }
-
-    // .info-reviews__icon
-
-    &__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: toRem(80);
-        height: toRem(80);
-        flex: 0 0 toRem(80);
-        background-color: #fff;
-        border-radius: 50%;
-    }
-
-    // .info-reviews__title
-
-    &__title {
-        font-size: toRem(20);
-        font-weight: 600;
-        line-height: 1.4;
-    }
-
-    // .info-reviews__rating
-
-    &__rating {
-        display: flex;
-        align-items: center;
-        column-gap: toRem(12);
-    }
-
-    // .info-reviews__value
-
-    &__value {
-        font-weight: 600;
-        font-size: toRem(19);
-        line-height: 1.26;
-        color: #FF9900;
-    }
-
-    // .info-reviews__stars
-
-    &__stars {
-        display: flex;
-        column-gap: toRem(2);
-
-        img {
-            width: toRem(20);
-            height: toRem(20);
-        }
-    }
-
-    // .info-reviews__quantity
-
-    &__quantity {
-        font-weight: 300;
-        font-size: toRem(13);
-        line-height: 1.69;
-        color: $grey;
     }
 
     // .info-reviews__action

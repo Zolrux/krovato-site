@@ -7,27 +7,9 @@
                     titleValue: "Останні відгуки"
                 })
                 <div class="reviews__info info-reviews">
-                    <div class="info-reviews__top">
-                        <div class="info-reviews__icon">
-                            <img src="../images/reviews/sofa.svg" alt="sofa icon">
-                        </div>
-                        <div class="info-reviews__content">
-                            <h3 class="info-reviews__title">Магазин меблів для дому «KROVATO»</h3>
-                            <div class="info-reviews__rating">
-                                <div class="info-reviews__value">5.0</div>
-                                <div class="info-reviews__stars">
-                                    <img src="../images/reviews/star-fill.svg" alt="star fill icon">
-                                    <img src="../images/reviews/star-fill.svg" alt="star fill icon">
-                                    <img src="../images/reviews/star-fill.svg" alt="star fill icon">
-                                    <img src="../images/reviews/star-fill.svg" alt="star fill icon">
-                                    <img src="../images/reviews/star-fill.svg" alt="star fill icon">
-                                </div>
-                            </div>
-                            <div class="info-reviews__quantity">
-                                 Базовано на відгуках: <span>269</span>
-                            </div>
-                        </div>
-                    </div>
+                    @@include("company-info.html", {
+                        modifierClass: "info-reviews__top"
+                    })
                     <div class="info-reviews__action">
                         <a href="#" class="info-reviews__add">Написати відгук</a>
                         <a href="#" class="info-reviews__all">Всі відгуки</a>
