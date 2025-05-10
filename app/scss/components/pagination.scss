@@ -4,6 +4,12 @@
     justify-content: center;
     column-gap: toRem(10);
 
+    &--margin {
+        &:not(:last-child) {
+            margin-bottom: toRem(30);
+        }
+    }
+
     @media (max-width: toRem(767.98)) {
           display: none;
     }
