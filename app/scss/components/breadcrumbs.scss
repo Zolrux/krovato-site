@@ -5,14 +5,18 @@
 			margin-block-end: toRem(30);
 		}
 	}
-	// .breadcrumbs__container
-	&__container {
-	}
 	// .breadcrumbs__list
 	&__list {
 		display: flex;
 		gap: toRem(10);
 		align-items: center;
+
+		@media (max-width: toRem(767.98)) {
+			  white-space: nowrap;
+			  overflow-x: auto;
+			  margin-right: toRem(-$paddingContainerInline);
+			  padding: 0 toRem(8) toRem(5) 0;
+		}
 	}
 	// .breadcrumbs__item
 	&__item {
