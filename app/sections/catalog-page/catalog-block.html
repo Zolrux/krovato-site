@@ -311,7 +311,9 @@
         </div>
         <div class="catalog__content-footer">
           <button class="catalog__btn-show-more button">Показати ще товари</button>
-          @@include("pagination.html")
+          @@include("pagination.html", {
+            hasMargin: false
+          })
         </div>
       </div>
     </div>
