@@ -4,17 +4,17 @@
         <div class="blog-articles__body">
             @@for (var i = 1; i <= 4; i++) {
                 @@include("article-card.html", {
-                    articleClass: "articles-news__slide swiper-slide",
+                    articleClass: "blog-articles__card",
                     "articleTitle": "Стільці для вітальні. Як правильно вибрати?",
                     "articleImgPath": "../images/articles/01.webp"
                 })
                 @@include("article-card.html", {
-                    articleClass: "articles-news__slide swiper-slide",
+                    articleClass: "blog-articles__card",
                     "articleTitle": "Що краще вибрати для кухні – стільці чи кухонний куточок?",
                     "articleImgPath": "../images/articles/02.webp"
                 })
                 @@include("article-card.html", {
-                    articleClass: "articles-news__slide swiper-slide",
+                    articleClass: "blog-articles__card",
                     "articleTitle": "Оформлення вітальні. Які м'які меблі краще вибрати?",
                     "articleImgPath": "../images/articles/03.webp"
                 })
