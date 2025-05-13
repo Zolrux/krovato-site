@@ -20,6 +20,8 @@ import moveElements from "./modules/product-page/move-elements";
 import deliveryToggle from "./modules/checkout-page/delivery-toggle";
 import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
 
+import tabReviews from "./modules/reviews-page/tab-reviews";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -55,6 +57,9 @@ window.addEventListener("load", () => {
   }
   else if (document.querySelector(".delivery-page")) {
     faqSpoilers();
+  }
+  else if (document.querySelector(".reviews-page")) {
+    tabReviews();
   }
 
   // for all pages
