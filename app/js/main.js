@@ -22,6 +22,8 @@ import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
 
 import tabReviews from "./modules/reviews-page/tab-reviews";
 
+import initMap from "./modules/map";
+
 window.addEventListener("load", () => {
   
   if (document.querySelector(".page")) {
@@ -60,6 +62,9 @@ window.addEventListener("load", () => {
   }
   else if (document.querySelector(".reviews-page")) {
     tabReviews();
+  }
+  else if (document.querySelector(".contacts-page")) {
+    initMap();
   }
 
   // for all pages
