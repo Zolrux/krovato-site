@@ -1,0 +1,162 @@
+.reviews-info {
+	padding-block-end: toRem(40);
+	// .reviews-info__title
+	&__title {
+		padding-block-end: toRem(40);
+	}
+	// .reviews-info__body
+	&__body {
+		margin-block-end: adaptiveValue(70, 40);
+		display: flex;
+		gap: toRem(60) toRem(30);
+		@media (max-width: toRem(1160)) {
+			flex-direction: column;
+		}
+	}
+	// .reviews-info__tab-actions
+	&__tab-actions {
+		display: flex;
+		gap: toRem(30);
+		overflow-y: auto;
+	}
+	// .reviews-info__items
+	&__items {
+		margin-block-end: toRem(30);
+		display: none;
+		&.active {
+			display: flex;
+			flex-direction: column;
+			gap: toRem(30);
+		}
+	}
+	// .reviews-info__item
+	&__item {
+		background-color: #fff;
+		border-radius: toRem(8);
+		border: toRem(1) solid #e3e2e2;
+		padding: adaptiveValue(30, 15);
+		box-shadow: toRem(-3) toRem(4) toRem(15) toRem(0) rgba(0, 0, 0, 0.06);
+	}
+	// .reviews-info__sidebar
+	&__sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(30);
+		flex-shrink: 0;
+		flex-basis: toRem(410);
+	}
+	// .reviews-info__content-footer
+	&__content-footer {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(30);
+	}
+	// .reviews-info__more
+	&__more {
+		align-self: center;
+		display: flex;
+		gap: toRem(15);
+		align-items: center;
+		padding-inline: toRem(30);
+		&::before {
+			content: "";
+			inline-size: toRem(20);
+			aspect-ratio: 1 / 1;
+			transition: background-color 0.3s ease-in;
+			mask-image: url("../../../images/reload.svg");
+			mask-size: toRem(20);
+			mask-repeat: no-repeat;
+			background-color: #fff;
+		}
+	}
+}
+.actions-tab-reviews {
+	padding-block-end: toRem(60);
+	position: relative;
+	&::after {
+		content: "";
+		block-size: toRem(3);
+		background-color: #fff;
+		inline-size: 100%;
+		position: absolute;
+		inset-block-end: toRem(40);
+	}
+	// .actions-tab-reviews__button
+	&__button {
+		flex-shrink: 0;
+		color: $dark;
+		font-size: toRem(20);
+		font-weight: 600;
+		line-height: 1.4;
+		position: relative;
+		transition: 0.3s color;
+		&.active {
+			color: $yellow;
+			&::after {
+				content: "";
+				position: absolute;
+				z-index: 3;
+				inset-inline-start: 0;
+				inset-block-end: toRem(-20);
+				block-size: toRem(3);
+				inline-size: 100%;
+				background-color: $yellow;
+			}
+		}
+	}
+}
+.item-reviews {
+	// .item-reviews__text
+	&__text {
+		color: $grey;
+		font-size: toRem(16);
+		font-weight: 400;
+		line-height: 1.87;
+	}
+	// .item-reviews__footer
+	&__footer {
+		display: inline-flex;
+		align-items: center;
+		gap: toRem(11);
+		margin-block-start: adaptiveValue(30, 20);
+	}
+	// .item-reviews__icon
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background-color: #fff;
+		flex-shrink: 0;
+		inline-size: toRem(50);
+		border: toRem(1) solid $yellow;
+		aspect-ratio: 1;
+		&--market {
+			&::before {
+				content: "";
+				// align-self: flex-end;
+				mask-image: url("../../../images/reviews/sofa.svg");
+				inline-size: toRem(35);
+				block-size: toRem(20);
+				mask-size: toRem(35);
+				background-color: $yellow;
+			}
+		}
+	}
+	// .item-reviews__logo-name
+	&__logo-name {
+		color: $grey;
+		font-size: toRem(20);
+		font-weight: 600;
+		line-height: 1.4;
+	}
+	a.item-reviews__footer {
+		.item-reviews__logo-name {
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
