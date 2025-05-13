@@ -1,0 +1,29 @@
+<section class="blog-articles">
+    <div class="blog-articles__container">
+        <h1 class="blog-articles__title title">Блог</h1>
+        <div class="blog-articles__body">
+            @@for (var i = 1; i <= 4; i++) {
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Стільці для вітальні. Як правильно вибрати?",
+                    "articleImgPath": "../images/articles/01.webp"
+                })
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Що краще вибрати для кухні – стільці чи кухонний куточок?",
+                    "articleImgPath": "../images/articles/02.webp"
+                })
+                @@include("article-card.html", {
+                    articleClass: "articles-news__slide swiper-slide",
+                    "articleTitle": "Оформлення вітальні. Які м'які меблі краще вибрати?",
+                    "articleImgPath": "../images/articles/03.webp"
+                })
+              }
+        </div>
+        @@include("pagination.html", {
+            hasMargin: true
+        })
+        <button class="blog-articles__btn button">Показати ще статті</button>
+        @@include("advantages.html")
+    </div>
+</section>
