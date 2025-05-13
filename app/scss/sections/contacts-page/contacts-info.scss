@@ -1,4 +1,5 @@
 .contacts-info {
+    padding-bottom: adaptiveValue(70, 60, 767.98);
 
     // .contacts-info__title
 
@@ -8,26 +9,41 @@
         &:not(:last-child) {
             margin-bottom: toRem(40);
         }
+
+        @media (max-width: toRem(767.98)) {
+            text-align: left;
+        }
     }
 
     // .contacts-info__items
 
     &__items {
+        max-width: toRem(1206);
         display: grid;
+        justify-content: space-between;
         grid-template-columns: toRem(240) toRem(280) toRem(300) toRem(240);
-        padding: 0 toRem(42);
-        grid-gap: toRem(30) toRem(50);
+        grid-gap: toRem(30) toRem(15);
+        margin: 0 auto;
 
         &:not(:last-child) {
-            margin-bottom: toRem(70);
+            margin-bottom: adaptiveValue(70, 40, 767.98);
+        }
+
+        @media (max-width: toRem(1159.98)) {
+            grid-template-columns: repeat(auto-fill, minmax(toRem(280), 1fr));
         }
     }
 
     // .contacts-info__wrapper
 
     &__wrapper {
-        display: flex;
-        column-gap: toRem(20);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: toRem(20);
+
+        @media (max-width: toRem(579.98)) {
+            grid-template-columns: 1fr;
+        }
     }
 
     // .contacts-info__image
@@ -40,19 +56,27 @@
             height: 100%;
             object-fit: cover;
         }
+
+        @media (max-width: toRem(579.98)) {
+            aspect-ratio: 1 / 1;
+        }
     }
 
     // .contacts-info__map
 
     &__map {
         flex: 1 1 auto;
+
+        @media (max-width: toRem(579.98)) {
+            aspect-ratio: 1 / 1;
+        }
     }
     
     // .contacts-info__map-marker
 
     &__map-marker {
-        width: toRem(125);
-        height: toRem(150);
+        width: adaptiveValue(125, 67, 767.98);
+        height: adaptiveValue(150, 80, 767.98);
     }
 }
 
