@@ -1,3 +1,4 @@
+import { throttle } from "../utils";
 import { cartItemQuantityActions } from "./cart-item-quantity";
 
 const headerEl = document.querySelector(".header");
@@ -120,11 +121,30 @@ const header = {
 		}
 	},
 	headerScroll: function () {
-		if (window.scrollY > 30) {
-			headerEl.classList.add("scroll");
-		} else {
-			headerEl.classList.remove("scroll");
+		let paddingTopForMainEl = 0;
+
+		const handleHeaderEl = () => {
+			const mainEl = document.querySelector("main");
+			const bottomHeaderEl = document.querySelector('.bottom-header');
+			const bottomHeaderFullHeight = bottomHeaderEl.offsetHeight;
+			const getPaddingTopFromMainEl = parseFloat(window.getComputedStyle(mainEl).paddingTop);
+
+			paddingTopForMainEl = bottomHeaderFullHeight;
+
+			if (paddingTopForMainEl !== getPaddingTopFromMainEl) {
+				mainEl.style.paddingTop = `${paddingTopForMainEl}px`;
+			}
+
+			if (window.scrollY > 30) {
+				this.headerEl.classList.add("scroll");
+			} else {
+				this.headerEl.classList.remove("scroll");
+			}
 		}
+
+		handleHeaderEl();
+		window.addEventListener("scroll", handleHeaderEl);
+		window.addEventListener("resize", throttle(handleHeaderEl, 200));
 	},
 };
 

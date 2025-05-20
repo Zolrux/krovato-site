@@ -70,6 +70,6 @@ window.addEventListener("load", () => {
   // for all pages
   
   header.headerAction();
+  header.headerScroll();
   footer();
-  window.addEventListener("scroll", header.headerScroll);
 });
