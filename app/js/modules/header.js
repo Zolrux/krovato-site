@@ -1,9 +1,8 @@
 import { throttle } from "../utils";
 import { cartItemQuantityActions } from "./cart-item-quantity";
 
-const headerEl = document.querySelector(".header");
-
 const header = {
+	headerEl: document.querySelector(".header"),
 	headerAction: function () {
 		let keypressActions = (e) => {
 			if (e.key === 'Escape') {
@@ -12,7 +11,7 @@ const header = {
 				document.querySelector(".contacts-header").classList.remove("--active");
 			}
 		}
-		headerEl.addEventListener("keydown", keypressActions);
+		this.headerEl.addEventListener("keydown", keypressActions);
 
 		const headerActions = (e) => {
 			const targetElement = e.target;
@@ -79,7 +78,7 @@ const header = {
 			cartItemQuantityActions(targetElement, e);
 
 		};
-		headerEl.addEventListener("click", headerActions);
+		this.headerEl.addEventListener("click", headerActions);
 		const isTouchScreen = window.matchMedia("(any-hover:none)").matches;
 
 		// Move header elements
@@ -95,7 +94,7 @@ const header = {
 		const bottomHeaderContainer = document.querySelector('.bottom-header__container');
 		const bottomHeaderMenus = document.querySelector('.bottom-header__menus');
 
-		if (headerEl && bottomHeader && topHeader) {
+		if (this.headerEl && bottomHeader && topHeader) {
 			const matchMedia = window.matchMedia(`(max-width: ${991.98 / 16}rem)`);
 			moveHeaderElements();
 			matchMedia.addEventListener("change", () => {
