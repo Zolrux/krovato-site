@@ -71,5 +71,6 @@ window.addEventListener("load", () => {
   
   header.headerAction();
   header.headerScroll();
+  header.itemsCatalogHeaderList();
   footer();
 });
