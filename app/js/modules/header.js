@@ -17,6 +17,7 @@ const header = {
 		const headerActions = (e) => {
 			const targetElement = e.target;
 			const targetTag = targetElement.tagName;
+			const isTouchScreen = window.matchMedia("(any-hover:none)").matches;
 
 			if (isTouchScreen) {
 				if (targetElement.closest('.lang-header')) {
@@ -67,7 +68,6 @@ const header = {
 
 		};
 		this.headerEl.addEventListener("click", headerActions);
-		const isTouchScreen = window.matchMedia("(any-hover:none)").matches;
 
 		// Move header elements
 		const topHeader = document.querySelector('.top-header');
