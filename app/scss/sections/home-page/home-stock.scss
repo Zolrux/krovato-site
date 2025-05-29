@@ -1,6 +1,12 @@
 .stock {
     padding-bottom: adaptiveValue(70, 60, 767.98);
 
+    // .stock__slider
+
+    &__slider {
+        border-radius: toRem(8);
+    }
+
     // .stock__slide-link
 
     &__slide-link {
