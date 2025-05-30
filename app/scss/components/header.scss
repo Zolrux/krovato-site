@@ -532,6 +532,9 @@
 				transition: transform .3s ease;
 			}
 		}
+		@media (max-width: toRem(991.98)) {
+			overflow: hidden;
+		}
 	}
 	&__action {
 		position: relative;
