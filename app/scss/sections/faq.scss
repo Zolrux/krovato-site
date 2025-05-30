@@ -30,9 +30,6 @@
 	}
 	&.is-active {
 		border: toRem(2) solid $yellow;
-		.item-faq__text {
-			margin-block-start: toRem(15);
-		}
 	}
 	// .item-faq__title
 	&__title {
@@ -77,6 +74,10 @@
 				align-self: center;
 			}
 		}
+	}
+	// .item-faq__wrapper
+	&__wrapper {
+		padding-block-start: toRem(15);
 	}
 	// .item-faq__text
 	&__text {
