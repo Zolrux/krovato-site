@@ -22,9 +22,10 @@ function expandText() {
         const fullHeight = expandTextWrapper.scrollHeight;
         
         isShow = !isShow;
+        expandTextWrapper.classList.toggle("--expanded");
         
         if (isShow) {
-            expandTextWrapper.style.maxHeight = fullHeight + "px";
+            requestAnimationFrame(() =>  expandTextWrapper.style.maxHeight = fullHeight + "px");
             expandShowMoreBtn.style.setProperty("--rotate", "-180deg");
             removeBgGradient();
         } else {
