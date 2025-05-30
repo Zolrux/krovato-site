@@ -27,7 +27,9 @@ function footer() {
 				onClose: currentElement => {
 					currentElement.removeAttribute("open");
 				}
-			})
+			});
+
+			footerMenuSpollersInstance.closeAll();
 			menuFooter.classList.add("_init");
 			menuFooterDetailItems.forEach(menuFooterDetailItem => menuFooterDetailItem.removeAttribute("open"));
 		}
