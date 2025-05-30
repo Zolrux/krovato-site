@@ -7,14 +7,14 @@
 		gap: toRem(15);
 		padding: toRem(20);
 		position: relative;
-		height: 100%;
+		block-size: 100%;
 		// background circle for card
 		&::after {
 			content: "";
 			position: absolute;
-			bottom: 0;
-			left: 50%;
-			width: 112%; /* 280/250 */
+			inset-block-end: 0;
+			inset-inline-start: 50%;
+			inline-size: 112%; /* 280/250 */
 			aspect-ratio: 1 / 1;
 			border-radius: 50%;
 			background: $light;
@@ -47,6 +47,14 @@
 		font-size: toRem(20);
 		line-height: 1.4;
 		transition: color 0.3s ease-out;
+		@media (max-width: toRem(439.98)) {
+			min-height: toRem(45);
+		}
+	}
+	// .item-category__quantity
+	&__title {
+		position: relative;
+		z-index: 2;
 	}
 	// .item-category__quantity
 	&__quantity {
@@ -55,15 +63,15 @@
 	// .item-category__arrow
 	&__arrow {
 		position: absolute;
-		bottom: toRem(20);
-		right: toRem(20);
+		inset-block-end: toRem(20);
+		inset-inline-end: toRem(20);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50%;
 		border: toRem(2) solid $yellow;
-		width: adaptiveValue(50, 40, 767.98);;
-		height: adaptiveValue(50, 40, 767.98);;
+		inline-size: adaptiveValue(50, 40, 767.98);
+		block-size: adaptiveValue(50, 40, 767.98);
 		transition: transform 0.3s;
 		z-index: 3;
 		will-change: transform;
@@ -71,8 +79,8 @@
 		// стрелка
 		&::before {
 			content: "";
-			width: adaptiveValue(11, 9, 767.98);
-			height: adaptiveValue(11, 9, 767.98);
+			inline-size: adaptiveValue(11, 9, 767.98);
+			block-size: adaptiveValue(11, 9, 767.98);
 			mask: url("../images/sprite.svg#arrow-forward");
 			mask-repeat: no-repeat;
 			background-color: $yellow;
@@ -80,7 +88,7 @@
 	}
 	// .item-category__image
 	&__image {
-		max-width: 100%;
+		max-inline-size: 100%;
 		position: relative;
 		z-index: 2;
 	}
