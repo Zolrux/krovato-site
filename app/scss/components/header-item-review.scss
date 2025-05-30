@@ -59,5 +59,6 @@
 	&__name {
 		font-size: toRem(17);
 		line-height: 1.41;
+		@include hide-fullname(475);
 	}
 }
