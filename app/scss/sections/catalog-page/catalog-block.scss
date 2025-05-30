@@ -179,11 +179,21 @@
             flex: 0 0 toRem(20);
             background-color: #fff;
             mask: url("../images/reload.svg") center no-repeat;
+			transition: 0.6s all;
+			will-change: transform;
         }
 
         @media (min-width: toRem(560)){
             align-self: center;
         }
+
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					transform: rotate(360deg);
+				}
+			}
+		}
     }
 }
 
