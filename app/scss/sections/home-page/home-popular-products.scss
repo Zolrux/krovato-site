@@ -2,8 +2,11 @@
 	// .popular-products__cards
 	&__cards {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(toRem(290), 1fr));
 		grid-gap: toRem(30);
+		@media (max-width: toRem(439.98)) {
+			grid-gap: toRem(25);
+		}
 	}
 
 	// .popular-products__show-more
@@ -24,13 +27,13 @@
 			padding: toRem(13) toRem(30);
 			border-radius: toRem(8);
 			margin: toRem(30) auto 0;
-	
-			&::before{
-				content: '';
+
+			&::before {
+				content: "";
 				width: toRem(20);
 				height: toRem(20);
 				flex: 0 0 toRem(20);
-				background: url('../images/reload.svg') 0 0 no-repeat;
+				background: url("../images/reload.svg") 0 0 no-repeat;
 			}
 		}
 	}
