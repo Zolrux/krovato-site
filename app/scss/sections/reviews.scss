@@ -51,10 +51,11 @@
     // .reviews__slider
 
     &__slider {
-        
+        border-radius: toRem(8);
         @media (min-width: toRem(560)){
             padding: toRem(15);
             margin: toRem(-15);
+            border-radius: 0;;
         }
     }
     
