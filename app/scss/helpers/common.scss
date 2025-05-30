@@ -67,6 +67,11 @@ body {
 	> p:not(:last-child) {
 		margin-bottom: toRem(10);
 	}
+
+	&.--expanded {
+		position: relative;
+		z-index: 1;
+	}
 }
 
 %expand-showmore-btn {
