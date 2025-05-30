@@ -140,12 +140,19 @@
 		margin-inline: toRem(-15);
 		gap: toRem(10);
 	}
+	// .menu-footer__nav
+	&__nav {
+		transition: height .6s ease;
+	}
 	// .menu-footer__item
 	&__item {
+		cursor: pointer;
+		overflow: hidden;
 		@media (min-width: toRem(600.98)) {
 			flex-basis: toRem(100);
 			flex-grow: 1;
 			flex-shrink: 1;
+			cursor: auto;
 		}
 	}
 	// .menu-footer__title
@@ -179,7 +186,7 @@
 				padding-block: toRem(11);
 			}
 		}
-		._init[open] & {
+		._init .is-active & {
 			&::after {
 				transform: scale(1, -1);
 			}
