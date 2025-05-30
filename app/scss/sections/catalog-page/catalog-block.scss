@@ -113,9 +113,21 @@
         padding: toRem(3) toRem(18) toRem(3) toRem(10);
         transition: border .3s ease, background-color .3s ease;
 
+        @media (any-hover: hover){
+            &:hover {
+                background-color: $yellow;
+                border: toRem(1) solid $yellow;
+            }
+        }
+
         &--clear {
             background-color: $yellow;
             border: toRem(1) solid transparent;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $yellowHover;
+                }
+            }
         }
 
         &::after{
@@ -124,13 +136,6 @@
             height: toRem(8);
             background-color: $dark;
             mask: url("../images/sprite.svg#remove") center no-repeat;
-        }
-
-        @media (any-hover: hover){
-            &:hover {
-                background-color: $yellow;
-                border: toRem(1) solid $yellow;
-            }
         }
      }
 
