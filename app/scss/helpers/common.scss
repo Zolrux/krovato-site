@@ -279,3 +279,10 @@ body {
         }
     }
 }
+
+@mixin hide-fullname($maxWidth) {
+	max-width: toRem($maxWidth);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
