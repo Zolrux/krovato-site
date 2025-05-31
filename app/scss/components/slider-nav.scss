@@ -43,7 +43,7 @@
 			background-color: $yellow;
 			transform: rotate(-180deg);
 		}
-		&:last-child::before {
+		&:last-child::after {
 			content: "";
 			width: adaptiveValue(20, 12, 768);
 			height: adaptiveValue(20, 12, 768);

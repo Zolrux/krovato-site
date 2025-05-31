@@ -64,9 +64,5 @@
 
     &__btn-next {
         right: toRem(20);
-
-        &::after {
-            display: none;            
-        }
     }
 }
