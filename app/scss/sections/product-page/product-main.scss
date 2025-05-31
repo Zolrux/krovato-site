@@ -33,12 +33,14 @@
 .slider-product {
 	// .slider-product__main
 	&__main {
+		border-radius: toRem(8);
 		&:not(:last-child) {
 			margin-block-end: adaptiveValue(30, 15);
 		}
 	}
 	// .slider-product__previews
 	&__previews {
+		border-radius: toRem(8);
 		@media (max-width: toRem(579.98)) {
 			margin-inline-end: toRem(-15);
 		}
