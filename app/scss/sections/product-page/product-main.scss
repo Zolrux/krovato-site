@@ -64,51 +64,13 @@
 		aspect-ratio: 630 / 538;
 		object-fit: cover;
 	}
-	// .main-slider-product__arrow
-	&__arrow {
-		position: absolute;
-		inset-block-start: 50%;
-		transform: translate(0, -50%);
-		inline-size: adaptiveValue(60, 40, 768);
-		aspect-ratio: 1 / 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		z-index: 2;
-		border-radius: 50%;
-		background-color: #fff;
-		transition: background-color 0.3s ease-in;
-		&::before {
-			content: "";
-			inline-size: adaptiveValue(20, 12, 768);
-			aspect-ratio: 1 / 1;
-			transition: background-color 0.3s ease-in;
-			mask: url("../images/sprite.svg#arrow-slider");
-			mask-repeat: no-repeat;
-			background-color: $yellow;
-		}
-		// .main-slider-product__arrow--prev
-		&--prev {
-			inset-inline-start: adaptiveValue(20, 10);
-			&::before {
-				transform: rotate(180deg);
-			}
-		}
-		// .main-slider-product__arrow--next
-		&--next {
-			inset-inline-end: adaptiveValue(20, 10);
-		}
-		@media (any-hover: hover) {
-			&:hover {
-				background-color: $yellow;
-				&::before {
-					background-color: #fff;
-				}
-				&::after {
-					background-color: #fff;
-				}
-			}
-		}
+	// .main-slider-product__arrow--prev
+	&__arrow--prev {
+		left: toRem(20);
+	}
+	// .main-slider-product__arrow--next
+	&__arrow--next {
+		right: toRem(20);
 	}
 }
 .previews-slider-product {
