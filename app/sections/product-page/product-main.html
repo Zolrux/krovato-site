@@ -113,8 +113,8 @@
 					</div>
 					<div class="options-product__block">
 						<label for="#" title="Тип тканини" class="options-product__label">Виберіть тканину:</label>
-						<div class="options-product__fabric fabric-options-product">
-							<div class="fabric-options-product__items">
+						<div class="options-product__fabric fabric-options-product" data-show-hide-wrapper>
+							<div class="fabric-options-product__items" data-show-hide-content>
 								<label class="fabric-options-product__item">
 									<input class="fabric-options-product__input" type="radio" name="fabric">
 									<img src="../../images/product-page/materials/01.webp" alt="Fabric image"
@@ -145,8 +145,27 @@
 									<img src="../../images/product-page/materials/06.webp" alt="Fabric image"
 										class="fabric-options-product__image">
 								</label>
+								<label class="fabric-options-product__item">
+									<input class="fabric-options-product__input" type="radio" name="fabric">
+									<img src="../../images/product-page/materials/01.webp" alt="Fabric image"
+										class="fabric-options-product__image">
+								</label>
+								<label class="fabric-options-product__item">
+									<input class="fabric-options-product__input" type="radio" name="fabric">
+									<img src="../../images/product-page/materials/03.webp" alt="Fabric image"
+										class="fabric-options-product__image">
+								</label>
+								<label class="fabric-options-product__item">
+									<input class="fabric-options-product__input" type="radio" name="fabric">
+									<img src="../../images/product-page/materials/02.webp" alt="Fabric image"
+										class="fabric-options-product__image">
+								</label>
 							</div>
-							<button type="button" class="fabric-options-product__more">Показати всі</button>
+							@@include("show-hide-btn.html", {
+								btnClass: "fabric-options-product__more",
+								showText: "Показати всі",
+								hideText: "Приховати"
+							})
 						</div>
 					</div>
 				</div>

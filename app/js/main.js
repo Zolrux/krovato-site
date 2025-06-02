@@ -43,6 +43,7 @@ window.addEventListener("load", () => {
   }
   else if (document.querySelector(".product-page")) {
     productSliders();
+    showHide();
     phoneMask();
     moveElements();
   }
