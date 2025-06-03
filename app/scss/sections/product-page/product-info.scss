@@ -229,6 +229,10 @@
 		}
 		// .footer-review__item--hide
 		&--hide {
+			// display: none;
+			// &._show {
+			// 	display: flex;
+			// }
 			&::before {
 				mask-image: url("../../../images/cross-border.svg");
 			}
@@ -255,9 +259,35 @@
 				flex-shrink: 0;
 			}
 		}
+		// .footer-review__item-actions
+		&-reply {
+			display: flex;
+			align-items: center;
+			.footer-review__item--answer,
+			.footer-review__item--hide {
+				display: none;
+				&._show {
+					display: flex;
+				}
+			}
+		}
+		// .footer-review__item-actions
+		&-actions {
+			.footer-review__item--quantity,
+			.footer-review__item--hide {
+				display: none;
+				&._show {
+					display: flex;
+				}
+			}
+		}
 	}
 }
 .answers-review {
+	display: none;
+	&._show {
+		display: block;
+	}
 	// .answers-review__item
 	&__item {
 		&:not(:last-child) {
@@ -299,9 +329,13 @@
 	}
 }
 .answer-form-review {
+	display: none;
 	padding: adaptiveValue(30, 15);
 	background-color: $light;
 	border-radius: toRem(8);
+	&._show {
+		display: block;
+	}
 	// .answer-form-review__title
 	&__title {
 		display: flex;

@@ -17,6 +17,7 @@ import productSliders from "./modules/sliders/product-sliders";
 import productSelects from "./modules/product-page/product-selects";
 import phoneMask from "./modules/product-page/phone-mask";
 import moveElements from "./modules/product-page/move-elements";
+import reviewsActions from "./modules/product-page/reviews";
 
 import deliveryToggle from "./modules/checkout-page/delivery-toggle";
 import { cartOrderItemQuantity } from "./modules/cart-item-quantity";
@@ -48,6 +49,7 @@ window.addEventListener("load", () => {
     showHide();
     phoneMask();
     moveElements();
+    reviewsActions();
   }
   else if (document.querySelector(".checkout-page")) {
     deliveryToggle();
