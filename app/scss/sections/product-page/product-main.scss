@@ -404,7 +404,7 @@
 		color: $yellow;
 		font-size: toRem(17);
 		line-height: 141.176471%;
-		margin-block-start: toRem(20);
+		margin-block-start: adaptiveValue(20, 10, 767.98);
 		transition: color 0.3s;
 		span {
 			font-weight: 400;
