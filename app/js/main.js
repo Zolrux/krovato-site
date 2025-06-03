@@ -45,6 +45,7 @@ window.addEventListener("load", () => {
   else if (document.querySelector(".product-page")) {
     productSliders();
     productSelects();
+    showHide();
     phoneMask();
     moveElements();
   }

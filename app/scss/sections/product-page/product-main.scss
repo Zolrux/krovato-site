@@ -342,10 +342,12 @@
 	&__items {
 		display: flex;
 		flex-wrap: wrap;
-		gap: toRem(20);
-		margin-block-end: toRem(20);
-		@media (max-width: toRem(579.98)) {
-			gap: toRem(10);
+		gap: toRem(25) toRem(20);
+		max-height: toRem(70);
+		overflow: hidden;
+		transition: max-height .6s ease;
+		&--margin-bottom {
+			margin-block-end: toRem(20);
 		}
 	}
 	// .fabric-options-product__item
@@ -402,17 +404,10 @@
 		color: $yellow;
 		font-size: toRem(17);
 		line-height: 141.176471%;
+		margin-block-start: toRem(20);
 		transition: color 0.3s;
-		&::after {
-			content: "";
-			inline-size: toRem(8);
-			block-size: toRem(12);
-			mask-image: url("../../../images/hide.svg");
-			transform: rotate(180deg);
-			mask-size: toRem(8);
-			mask-repeat: no-repeat;
-			background-color: $yellow;
-			transition: background-color 0.3s;
+		span {
+			font-weight: 400;
 		}
 		@media (any-hover: hover) {
 			&:hover {
