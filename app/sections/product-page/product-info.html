@@ -132,10 +132,34 @@
 							</p>
 						</div>
 						<div class="item-review__footer footer-review">
-							<button href="#" class="footer-review__item footer-review__item--answer">Відповісти</button>
-							<button href="#" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
-							<button href="#" class="footer-review__item footer-review__item--useful">Корисний відгук:<span>24</span></button>
+							<div class="footer-review__item-reply">
+								<button data-review-replies="show" class="footer-review__item footer-review__item--answer _show">Відповісти</button>
+								<button data-review-replies="hide" class="footer-review__item footer-review__item--hide">Передумав</button>
+							</div>
+							<div class="footer-review__item-actions">
+								<button data-review-answers="show" data-quantity="2" class="footer-review__item footer-review__item--quantity _show">Показати відповіді</button>
+								<button data-review-answers="hide" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
+							</div>
+							<button class="footer-review__item footer-review__item--useful">Корисний відгук:<span>24</span></button>
 						</div>
+						<form action="#" class="item-review__answer-form answer-form-review">
+							<h4 class="answer-form-review__title _icon-r-reply">Відповідь для Іван Стедниця</h4>
+							<div class="answer-form-review__row">
+								<div class="answer-form-review__item">
+									<input placeholder="Ваше ім'я прізвище" type="text" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<input placeholder="E-mail" type="email" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<textarea placeholder="Відгук" required class="answer-form-review__input"></textarea>
+								</div>
+							</div>
+							<div class="answer-form-review__buttons">
+								<button type="submit" class="answer-form-review__button button">Відправити</button>
+								<button type="button" class="answer-form-review__button button button--border">Відмінити</button>
+							</div>
+						</form>
 						<div class="item-review__answers answers-review">
 							<div class="answers-review__item">
 								<div class="answers-review__header">
@@ -188,9 +212,15 @@
 							</p>
 						</div>
 						<div class="item-review__footer footer-review">
-							<button href="#" class="footer-review__item footer-review__item--hide">Передумав</button>
-							<button href="#" data-quantity="2" class="footer-review__item footer-review__item--quantity">Показати відповіді</button>
-							<button href="#" class="footer-review__item footer-review__item--useful">
+							<div class="footer-review__item-reply">
+								<button data-review-replies="show" class="footer-review__item footer-review__item--answer _show">Відповісти</button>
+								<button data-review-replies="hide" class="footer-review__item footer-review__item--hide">Передумав</button>
+							</div>
+							<div class="footer-review__item-actions">
+								<button data-review-answers="show" data-quantity="2" class="footer-review__item footer-review__item--quantity _show">Показати відповіді</button>
+								<button data-review-answers="hide" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
+							</div>
+							<button class="footer-review__item footer-review__item--useful">
 								Корисний відгук:<span>24</span>
 							</button>
 						</div>
@@ -212,6 +242,42 @@
 								<button type="button" class="answer-form-review__button button button--border">Відмінити</button>
 							</div>
 						</form>
+						<div class="item-review__answers answers-review">
+							<div class="answers-review__item">
+								<div class="answers-review__header">
+									<div class="answers-review__user user-review">
+										<div class="user-review__icon"></div>
+										<h6 class="user-review__name">Олександр Гончаров</h6>
+									</div>
+									<div class="answers-review__arrow"></div>
+									<div class="answers-review__name">Костянтин Лук'яненко</div>
+									<time datetime="16.04.2025" class="answers-review__date">16.04.2025</time>
+								</div>
+								<div class="answers-review__text">
+									<p>
+										Згоден з вами! Довго шукав зручне та недороге ліжко в спальню. Ліжко+матрац
+										виходила дуже пристойна сума. Тут знайшов ліжко разом із матрацом за дуже
+										привабливою ціною. Передзвонив, уточнив, дій.
+									</p>
+								</div>
+							</div>
+							<div class="answers-review__item">
+								<div class="answers-review__header">
+									<div class="answers-review__user user-review">
+										<div class="user-review__icon user-review__icon--admin"></div>
+										<h6 class="user-review__name">KROVATO</h6>
+									</div>
+									<div class="answers-review__arrow"></div>
+									<div class="answers-review__name">Костянтин Лук'яненко</div>
+									<time datetime="18.04.2025" class="answers-review__date">18.04.2025</time>
+								</div>
+								<div class="answers-review__text">
+									<p>
+										Дякуємо за відгуки! будемо раді бачити Вас знову!
+									</p>
+								</div>
+							</div>
+						</div>
 					</article>
 					<article class="reviews-product__item item-review">
 						@@include("header-item-review.html", {
@@ -226,12 +292,36 @@
 							</p>
 						</div>
 						<div class="item-review__footer footer-review">
-							<button href="#" class="footer-review__item footer-review__item--answer">Відповісти</button>
-							<button href="#" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
-							<button href="#" class="footer-review__item footer-review__item--useful">
+							<div class="footer-review__item-reply">
+								<button data-review-replies="show" class="footer-review__item footer-review__item--answer _show">Відповісти</button>
+								<button data-review-replies="hide" class="footer-review__item footer-review__item--hide">Передумав</button>
+							</div>
+							<div class="footer-review__item-actions">
+								<button data-review-answers="show" data-quantity="2" class="footer-review__item footer-review__item--quantity _show">Показати відповіді</button>
+								<button data-review-answers="hide" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
+							</div>
+							<button class="footer-review__item footer-review__item--useful">
 								Корисний відгук:<span>24</span>
 							</button>
 						</div>
+						<form action="#" class="item-review__answer-form answer-form-review">
+							<h4 class="answer-form-review__title _icon-r-reply">Відповідь для Іван Стедниця</h4>
+							<div class="answer-form-review__row">
+								<div class="answer-form-review__item">
+									<input placeholder="Ваше ім'я прізвище" type="text" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<input placeholder="E-mail" type="email" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<textarea placeholder="Відгук" required class="answer-form-review__input"></textarea>
+								</div>
+							</div>
+							<div class="answer-form-review__buttons">
+								<button type="submit" class="answer-form-review__button button">Відправити</button>
+								<button type="button" class="answer-form-review__button button button--border">Відмінити</button>
+							</div>
+						</form>
 						<div class="item-review__answers answers-review">
 							<div class="answers-review__item">
 								<div class="answers-review__header">
@@ -264,11 +354,53 @@
 							</p>
 						</div>
 						<div class="item-review__footer footer-review">
-							<button href="#" class="footer-review__item footer-review__item--answer">Відповісти</button>
-							<button href="#" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
-							<button href="#" class="footer-review__item footer-review__item--useful">
+							<div class="footer-review__item-reply">
+								<button data-review-replies="show" class="footer-review__item footer-review__item--answer _show">Відповісти</button>
+								<button data-review-replies="hide" class="footer-review__item footer-review__item--hide">Передумав</button>
+							</div>
+							<div class="footer-review__item-actions">
+								<button data-review-answers="show" data-quantity="2" class="footer-review__item footer-review__item--quantity _show">Показати відповіді</button>
+								<button data-review-answers="hide" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
+							</div>
+							<button class="footer-review__item footer-review__item--useful">
 								Корисний відгук:<span>24</span>
 							</button>
+						</div>
+						<form action="#" class="item-review__answer-form answer-form-review">
+							<h4 class="answer-form-review__title _icon-r-reply">Відповідь для Іван Стедниця</h4>
+							<div class="answer-form-review__row">
+								<div class="answer-form-review__item">
+									<input placeholder="Ваше ім'я прізвище" type="text" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<input placeholder="E-mail" type="email" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<textarea placeholder="Відгук" required class="answer-form-review__input"></textarea>
+								</div>
+							</div>
+							<div class="answer-form-review__buttons">
+								<button type="submit" class="answer-form-review__button button">Відправити</button>
+								<button type="button" class="answer-form-review__button button button--border">Відмінити</button>
+							</div>
+						</form>
+						<div class="item-review__answers answers-review">
+							<div class="answers-review__item">
+								<div class="answers-review__header">
+									<div class="answers-review__user user-review">
+										<div class="user-review__icon"></div>
+										<h6 class="user-review__name">Олесь Шафодан</h6>
+									</div>
+									<div class="answers-review__arrow"></div>
+									<div class="answers-review__name">Іван Диванченко</div>
+									<time datetime="12.02.2025" class="answers-review__date">12.02.2025</time>
+								</div>
+								<div class="answers-review__text">
+									<p>
+										Погоджуюсь повністю! Довго не міг знайти якісне ліжко з матрацом за нормальні гроші. В інших магазинах ціна була явно завищена. Тут побачив варіант, що підійшов і по дизайну, і по бюджету. Зателефонував — все підтвердили, оформив замовлення без вагань.
+									</p>
+								</div>
+							</div>
 						</div>
 					</article>
 					<article class="reviews-product__item item-review">
@@ -284,11 +416,53 @@
 							</p>
 						</div>
 						<div class="item-review__footer footer-review">
-							<button href="#" class="footer-review__item footer-review__item--answer">Відповісти</button>
-							<button href="#" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
-							<button href="#" class="footer-review__item footer-review__item--useful">
+							<div class="footer-review__item-reply">
+								<button data-review-replies="show" class="footer-review__item footer-review__item--answer _show">Відповісти</button>
+								<button data-review-replies="hide" class="footer-review__item footer-review__item--hide">Передумав</button>
+							</div>
+							<div class="footer-review__item-actions">
+								<button data-review-answers="show" data-quantity="2" class="footer-review__item footer-review__item--quantity _show">Показати відповіді</button>
+								<button data-review-answers="hide" class="footer-review__item footer-review__item--hide">Приховати відповіді</button>
+							</div>
+							<button class="footer-review__item footer-review__item--useful">
 								Корисний відгук:<span>24</span>
 							</button>
+						</div>
+						<form action="#" class="item-review__answer-form answer-form-review">
+							<h4 class="answer-form-review__title _icon-r-reply">Відповідь для Іван Стедниця</h4>
+							<div class="answer-form-review__row">
+								<div class="answer-form-review__item">
+									<input placeholder="Ваше ім'я прізвище" type="text" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<input placeholder="E-mail" type="email" required class="answer-form-review__input">
+								</div>
+								<div class="answer-form-review__item">
+									<textarea placeholder="Відгук" required class="answer-form-review__input"></textarea>
+								</div>
+							</div>
+							<div class="answer-form-review__buttons">
+								<button type="submit" class="answer-form-review__button button">Відправити</button>
+								<button type="button" class="answer-form-review__button button button--border">Відмінити</button>
+							</div>
+						</form>
+						<div class="item-review__answers answers-review">
+							<div class="answers-review__item">
+								<div class="answers-review__header">
+									<div class="answers-review__user user-review">
+										<div class="user-review__icon"></div>
+										<h6 class="user-review__name">Олесь Шафодан</h6>
+									</div>
+									<div class="answers-review__arrow"></div>
+									<div class="answers-review__name">Іван Диванченко</div>
+									<time datetime="12.02.2025" class="answers-review__date">12.02.2025</time>
+								</div>
+								<div class="answers-review__text">
+									<p>
+										Погоджуюсь повністю! Довго не міг знайти якісне ліжко з матрацом за нормальні гроші. В інших магазинах ціна була явно завищена. Тут побачив варіант, що підійшов і по дизайну, і по бюджету. Зателефонував — все підтвердили, оформив замовлення без вагань.
+									</p>
+								</div>
+							</div>
 						</div>
 					</article>
 				</div>
