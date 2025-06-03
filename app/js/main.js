@@ -14,6 +14,7 @@ import filterCatalog from "./modules/catalog-page/filter-catalog";
 import dropdownSort from "./modules/catalog-page/dropdown-sort";
 
 import productSliders from "./modules/sliders/product-sliders";
+import productSelects from "./modules/product-page/product-selects";
 import phoneMask from "./modules/product-page/phone-mask";
 import moveElements from "./modules/product-page/move-elements";
 
@@ -43,6 +44,7 @@ window.addEventListener("load", () => {
   }
   else if (document.querySelector(".product-page")) {
     productSliders();
+    productSelects();
     phoneMask();
     moveElements();
   }

@@ -47,9 +47,6 @@
 	}
 }
 .main-slider-product {
-	// .main-slider-product__wraper
-	&__wraper {
-	}
 	// .main-slider-product__slide
 	&__slide {
 		text-align: center;
@@ -74,9 +71,6 @@
 	}
 }
 .previews-slider-product {
-	// .previews-slider-product__wrapper
-	&__wrapper {
-	}
 	// .previews-slider-product__slide
 	&__slide {
 		border: toRem(1) solid $greyLight;
@@ -141,9 +135,6 @@
 		&:not(:last-child) {
 			margin-block-end: toRem(10);
 		}
-	}
-	// .body-product__buy-click
-	&__buy-click {
 	}
 }
 //========================================================================================================================================================
@@ -282,35 +273,68 @@
 	}
 	// .options-product__select
 	&__select {
-		background-color: $light;
-		border-radius: toRem(8);
 		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			inset-block-start: 0;
-			inset-inline-end: toRem(15);
-			inline-size: toRem(20);
-			block-size: 100%;
-			mask-image: url("../images/sprite.svg#arrow");
-			background-color: $grey;
-			mask-size: toRem(12);
-			mask-repeat: no-repeat;
-			mask-position: center;
-			pointer-events: none;
+
+		.nice-select {
+			display: flex;
+			align-items: center;
+			position: relative;
+			border-radius: toRem(8);
+			padding-inline: toRem(15);
+			color: $grey;
+			font-size: toRem(16);
+			background-color: $light;
+			inline-size: 100%;
+			block-size: toRem(50);
+			border: 0;
+			&::after {
+				display: none;				
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				inset-block-start: 0;
+				inset-inline-end: toRem(15);
+				inline-size: toRem(20);
+				block-size: 100%;
+				mask-image: url("../images/sprite.svg#arrow");
+				background-color: $grey;
+				mask-size: toRem(12);
+				mask-repeat: no-repeat;
+				mask-position: center;
+				pointer-events: none;
+				transition: transform .3s ease;
+			}
+
+			.nice-select-dropdown {
+				width: 100%;
+				background-color: transparent;
+			}
+
+			&.open::before {
+				transform: rotate(-180deg);
+			}
+
+			.list {
+				box-shadow: toRem(1) toRem(1) toRem(10) rgba($dark, .3);
+			}
+
+			.option {
+				background-color: #fff !important;
+				&:not(:last-child) {
+					border-bottom: toRem(1) solid $greyLight;
+				}
+
+				&.selected {
+					background-color: $yellow !important;
+					font-weight: 700;
+				}
+				
+				&:not(.selected):hover {
+					background-color: $greyLight !important;
+				}
+			}
 		}
-	}
-	// .options-product__value-select
-	&__value-select {
-		padding-inline: toRem(15);
-		color: $grey;
-		font-size: toRem(16);
-		block-size: toRem(50);
-		inline-size: 100%;
-		background-color: transparent;
-	}
-	// .options-product__fabric
-	&__fabric {
 	}
 }
 .fabric-options-product {
