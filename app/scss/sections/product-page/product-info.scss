@@ -112,6 +112,10 @@
 	padding: adaptiveValue(30, 15);
 	display: grid;
 	gap: adaptiveValue(40, 20);
+	@media (max-width: toRem(580)) {
+		margin-inline: toRem(-20);
+		padding-inline: toRem(30);
+	}
 	// .reviews-product__header
 	&__header {
 		display: inline-flex;
