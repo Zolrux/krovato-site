@@ -61,7 +61,7 @@ function sprite () {
 function scripts() {
   return src('app/js/main.js')
     .pipe(webpack({
-      mode: 'development',
+      mode: 'production',
       entry: './app/js/main.js',
       output: {
         filename: 'main.min.js',
@@ -95,7 +95,7 @@ function watching() {
 
 
 function cleanDist() {
-  return src('dist')
+  return src('dist', {allowEmpty: true})
     .pipe(clean())
 }
 
@@ -108,13 +108,12 @@ function removeFillAttrsFromSvgIcons() {
 function building() {
   return src([
     'app/css/style.min.css',
+    'app/images/**/*.*',
     '!app/images/**/*.html',
-    'app/images/*.*',
-    '!app/images/*.svg',
-    'app/images/sprite.svg',
+    '!app/images/src/**/*',
     'app/fonts/*.*',
     'app/js/main.min.js',
-    'app/**/*.html'
+    'app/*.html'
   ], {base : 'app'})
     .pipe(dest('dist'))
 }
