@@ -135,14 +135,31 @@
             &::before{          
                 @extend %blog-article-link-arrow;  
                 transform: rotate(-135deg);
+				transition: 0.3s translate;
             }
+			@media (any-hover: hover) {
+				&:hover {
+					&::before {
+						translate: toRem(-10);
+					}
+				}
+			}
         }
 
         &--next{
             &::after{
                 @extend %blog-article-link-arrow;
                 transform: rotate(45deg);
+				transition: 0.3s translate;
             }
+			@media (any-hover: hover) {
+				&:hover {
+					&::after {
+						translate: toRem(10);
+					}
+				}
+			}
         }
+		
     }
 }
