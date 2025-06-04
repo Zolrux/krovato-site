@@ -416,7 +416,17 @@
             width: toRem(20);
             height: toRem(18);
             flex: 0 0 toRem(20);
-            background: url('../images/checkout-page/map.svg') 0 0 no-repeat;
+            background: url('../images/map.svg') 0 0 no-repeat;
+            transition: 0.4s transform;
+            will-change: transform;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                &::before {
+                    transform: rotate(180deg);
+                }
+            }
         }
     }
 }
