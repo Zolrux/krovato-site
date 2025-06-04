@@ -63,7 +63,7 @@
 			inline-size: toRem(20);
 			aspect-ratio: 1 / 1;
 			transition: background-color 0.3s ease-in;
-			mask-image: url("../../../images/reload.svg");
+			mask-image: url("../images/reload.svg");
 			mask-size: toRem(20);
 			mask-repeat: no-repeat;
 			background-color: #fff;
@@ -144,7 +144,7 @@
 			&::before {
 				content: "";
 				// align-self: flex-end;
-				mask-image: url("../../../images/reviews/sofa.svg");
+				mask-image: url("../images/reviews/sofa.svg");
 				inline-size: toRem(35);
 				block-size: toRem(20);
 				mask-size: toRem(35);

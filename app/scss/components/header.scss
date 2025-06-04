@@ -706,7 +706,7 @@
 			content: "";
 			inline-size: toRem(24);
 			aspect-ratio: 1 / 1;
-			background: url("../../images/header/search.svg") 0 0 / 100% no-repeat;
+			background: url("../images/header/search.svg") 0 0 / 100% no-repeat;
 		}
 		@media (max-width: toRem(579.98)) {
 			block-size: 50%;
@@ -772,7 +772,7 @@
 	}
 	// .search-header__open-search
 	&__open-search {
-		mask-image: url("../../images/header/search.svg");
+		mask-image: url("../images/header/search.svg");
 		mask-size: contain;
 		mask-repeat: no-repeat;
 		mask-position: center;
@@ -780,7 +780,7 @@
 	}
 	// .search-header__open-search
 	&__open-close {
-		mask-image: url("../../images/header/thin-cross.svg");
+		mask-image: url("../images/header/thin-cross.svg");
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center;
@@ -1008,7 +1008,7 @@
 		}
 		.--active & {
 			&::before {
-				mask-image: url("../../images/header/thin-cross.svg");
+				mask-image: url("../images/header/thin-cross.svg");
 				mask-repeat: no-repeat;
 				mask-size: contain;
 				inline-size: toRem(11);
@@ -1278,7 +1278,7 @@
 			content: "";
 			inline-size: toRem(16);
 			aspect-ratio: 1 / 1;
-			mask-image: url("../../images/header/thin-cross.svg");
+			mask-image: url("../images/header/thin-cross.svg");
 			background-color: $dark;
 			mask-size: toRem(16);
 			mask-repeat: no-repeat;

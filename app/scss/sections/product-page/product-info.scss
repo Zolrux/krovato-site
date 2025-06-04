@@ -153,7 +153,7 @@
 			inline-size: toRem(20);
 			aspect-ratio: 1 / 1;
 			transition: background-color 0.3s ease-in;
-			mask-image: url("../../../images/reload.svg");
+			mask-image: url("../images/reload.svg");
 			mask-size: toRem(20);
 			mask-repeat: no-repeat;
 			background-color: #fff;
@@ -224,7 +224,7 @@
 		// .footer-review__item--answer
 		&--answer {
 			&::before {
-				mask-image: url("../../../images/reviews/chat.svg");
+				mask-image: url("../images/reviews/chat.svg");
 			}
 		}
 		// .footer-review__item--hide
@@ -234,13 +234,13 @@
 			// 	display: flex;
 			// }
 			&::before {
-				mask-image: url("../../../images/cross-border.svg");
+				mask-image: url("../images/cross-border.svg");
 			}
 		}
 		// .footer-review__item--useful
 		&--useful {
 			&::before {
-				mask-image: url("../../../images/reviews/like.svg");
+				mask-image: url("../images/reviews/like.svg");
 				mask-size: toRem(18);
 			}
 		}
@@ -312,7 +312,7 @@
 			inline-size: toRem(20);
 			block-size: toRem(12);
 			transition: background-color 0.3s ease-in;
-			mask-image: url("../../../images/reviews/long-arrow.svg");
+			mask-image: url("../images/reviews/long-arrow.svg");
 			mask-size: toRem(20);
 			mask-repeat: no-repeat;
 			background-color: $yellow;
@@ -350,7 +350,7 @@
 			inline-size: toRem(32);
 			aspect-ratio: 1 / 1;
 			transition: background-color 0.3s ease-in;
-			mask-image: url("../../../images/reviews/reply.svg");
+			mask-image: url("../images/reviews/reply.svg");
 			mask-size: toRem(22);
 			mask-position: center;
 			mask-repeat: no-repeat;

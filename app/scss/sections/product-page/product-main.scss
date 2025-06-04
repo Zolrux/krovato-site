@@ -265,7 +265,7 @@
 			content: "";
 			inline-size: toRem(20);
 			aspect-ratio: 1 / 1;
-			mask-image: url("../../../images/question.svg");
+			mask-image: url("../images/question.svg");
 			mask-size: toRem(18);
 			mask-repeat: no-repeat;
 			background-color: $greyLight;
@@ -432,7 +432,7 @@
 		transform: scale(0);
 	}
 	100% {
-		background: url("../../../images/check.svg") center no-repeat;
+		background: url("../images/check.svg") center no-repeat;
 		transform: scale(1);
 	}
 }
@@ -530,7 +530,7 @@
 			aspect-ratio: 1 / 1;
 			display: flex;
 			align-items: center;
-			mask-image: url("../../../images/phone.svg");
+			mask-image: url("../images/phone.svg");
 			mask-repeat: no-repeat;
 			background-color: $greyLight;
 			pointer-events: none;

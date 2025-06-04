@@ -83,7 +83,7 @@
 		}
 		&.item-product__available--unstock {
 			&::before {
-				mask-image: url("../../images/cross-border.svg");
+				mask-image: url("../images/cross-border.svg");
 				background-color: $red;
 			}
 		}

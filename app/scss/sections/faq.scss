@@ -35,7 +35,7 @@
 	&__title {
 		cursor: pointer;
 		list-style: none;
-		background: url("../../images/question.svg") 0 0 / toRem(33) no-repeat;
+		background: url("../images/question.svg") 0 0 / toRem(33) no-repeat;
 		font-size: toRem(19);
 		font-weight: 600;
 		line-height: 126.315789%; /* 24/19 */
@@ -66,7 +66,7 @@
 			}
 		}
 		@media (max-width: toRem(479.98)) {
-			background: url("../../images/question.svg") 0 0 / toRem(25) no-repeat;
+			background: url("../images/question.svg") 0 0 / toRem(25) no-repeat;
 			padding-inline-start: toRem(35);
 			padding-block-start: toRem(1);
 			align-items: flex-start;

@@ -1,55 +1,55 @@
 [
 	{
-		"imageSrc":"../images/home-page/products/01.webp",
+		"imageSrc":"images/home-page/products/01.webp",
 		"title":"Ліжко Спарта / Sparta з підйомним механізмом",
 		"isInStock":true,
 		"oldPrice":"155 400",
 		"newPrice":"125 000"
 	},
 	{
-		"imageSrc":"../images/home-page/products/02.webp",
+		"imageSrc":"images/home-page/products/02.webp",
 		"title":"Ліжко Аргон з підйомним механізмом",
 		"isInStock":true,
 		"oldPrice":"",
 		"newPrice":"16 000"
 	},
 	{
-		"imageSrc":"../images/home-page/products/03.webp",
+		"imageSrc":"images/home-page/products/03.webp",
 		"title":"Ліжко Престиж з підйомним механізмом",
 		"isInStock":false,
 		"oldPrice":"",
 		"newPrice":"13 211"
 	},
 	{
-		"imageSrc":"../images/home-page/products/04.webp",
+		"imageSrc":"images/home-page/products/04.webp",
 		"title":"Диван Токіо-2",
 		"isInStock":true,
 		"oldPrice":"155 400",
 		"newPrice":"125 000"
 	},
 	{
-		"imageSrc":"../images/home-page/products/05.webp",
+		"imageSrc":"images/home-page/products/05.webp",
 		"title":"Матрац Largo SLIM / Ларго Слім",
 		"isInStock":false,
 		"oldPrice":"",
 		"newPrice":"2 810"
 	},
 	{
-		"imageSrc":"../images/home-page/products/06.webp",
+		"imageSrc":"images/home-page/products/06.webp",
 		"title":"Матрац ARGENTUM AMALTEA / Аргентум Амалті",
 		"isInStock":true,
 		"oldPrice":"5 960",
 		"newPrice":"5 071"
 	},
 	{
-		"imageSrc":"../images/home-page/products/07.webp",
+		"imageSrc":"images/home-page/products/07.webp",
 		"title":"Диван Браво",
 		"isInStock":true,
 		"oldPrice":"11 660",
 		"newPrice":"10 008"
 	},
 	{
-		"imageSrc":"../images/home-page/products/08.webp",
+		"imageSrc":"images/home-page/products/08.webp",
 		"title":"Ліжко МК-5",
 		"isInStock":false,
 		"oldPrice":"",

@@ -153,13 +153,13 @@ body {
 		// .quantity__button--minus
 		&--minus {
 			&::before {
-				mask-image: url("../../images/header/minus.svg");
+				mask-image: url("../images/header/minus.svg");
 			}
 		}
 		// .quantity__button--plus
 		&--plus {
 			&::before {
-				mask-image: url("../../images/header/plus.svg");
+				mask-image: url("../images/header/plus.svg");
 			}
 		}
 	}
@@ -238,7 +238,7 @@ body {
 		&::before {
 			content: "";
 			flex-shrink: 0;
-			background: url("../../../images/reviews/review-all.svg") 0 0 / 20px no-repeat;
+			background: url("../images/reviews/review-all.svg") 0 0 / 20px no-repeat;
 			aspect-ratio: 1 / 1;
 			flex-basis: toRem(20);
 			inline-size: toRem(20);

@@ -44,7 +44,7 @@
 			inline-size: toRem(20);
 			aspect-ratio: 1 / 1;
 			transition: background-color 0.3s ease-in;
-			mask-image: url("../../../images/reviews/user.svg");
+			mask-image: url("../images/reviews/user.svg");
 			mask-size: toRem(20);
 			mask-repeat: no-repeat;
 			background-color: $dark;
@@ -52,7 +52,7 @@
 		&--admin {
 			&::before {
 				align-self: flex-end;
-				mask-image: url("../../../images/reviews/sofa.svg");
+				mask-image: url("../images/reviews/sofa.svg");
 				inline-size: toRem(35);
 				mask-size: toRem(35);
 				background-color: $yellow;

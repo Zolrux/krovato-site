@@ -78,16 +78,16 @@
 		appearance: none;
 		inline-size: toRem(33);
 		aspect-ratio: 1;
-		background: url("../../../images/reviews/star-gray.svg") 0 0 / 100% no-repeat;
+		background: url("../images/reviews/star-gray.svg") 0 0 / 100% no-repeat;
 		transition: background 0.2s;
 		&:has(~ *:hover),
 		&:has(~ *:checked),
 		&:checked {
-			background: url("../../../images/reviews/star-fill-review.svg") 0 0 / 100% no-repeat;
+			background: url("../images/reviews/star-fill-review.svg") 0 0 / 100% no-repeat;
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				background: url("../../../images/reviews/star-fill.svg") 0 0 / 100% no-repeat;
+				background: url("../images/reviews/star-fill.svg") 0 0 / 100% no-repeat;
 			}
 		}
 	}

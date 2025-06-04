@@ -2,51 +2,51 @@
 	{
 		"title":"Ліжка",
 		"quantity":54,
-		"imageSrc":"../images/home-page/categories/01.webp"
+		"imageSrc":"images/home-page/categories/01.webp"
 	},
 	{
 		"title":"Матраци",
 		"quantity":30,
-		"imageSrc":"../images/home-page/categories/02.webp"
+		"imageSrc":"images/home-page/categories/02.webp"
 	},
 	{
 		"title":"М'які меблі",
 		"quantity":196,
-		"imageSrc":"../images/home-page/categories/03.webp"
+		"imageSrc":"images/home-page/categories/03.webp"
 	},
 	{
 		"title":"Шафи",
 		"quantity":79,
-		"imageSrc":"../images/home-page/categories/04.webp"
+		"imageSrc":"images/home-page/categories/04.webp"
 	},
 	{
 		"title":"Комоди",
 		"quantity":54,
-		"imageSrc":"../images/home-page/categories/05.webp"
+		"imageSrc":"images/home-page/categories/05.webp"
 	},
 	{
 		"title":"Тумби",
 		"quantity":64,
-		"imageSrc":"../images/home-page/categories/06.webp"
+		"imageSrc":"images/home-page/categories/06.webp"
 	},
 	{
 		"title":"Столи",
 		"quantity":35,
-		"imageSrc":"../images/home-page/categories/07.webp"
+		"imageSrc":"images/home-page/categories/07.webp"
 	},
 	{
 		"title":"Стільці",
 		"quantity":89,
-		"imageSrc":"../images/home-page/categories/08.webp"
+		"imageSrc":"images/home-page/categories/08.webp"
 	},
 	{
 		"title":"Меблеві стіни",
 		"quantity":24,
-		"imageSrc":"../images/home-page/categories/09.webp"
+		"imageSrc":"images/home-page/categories/09.webp"
 	},
 	{
 		"title":"Кухні",
 		"quantity":30,
-		"imageSrc":"../images/home-page/categories/10.webp"
+		"imageSrc":"images/home-page/categories/10.webp"
 	}
 ]

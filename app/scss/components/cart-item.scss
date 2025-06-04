@@ -123,13 +123,13 @@
 		// .quantity__button--minus
 		&--minus {
 			&::before {
-				mask-image: url("../../images/header/minus.svg");
+				mask-image: url("../images/header/minus.svg");
 			}
 		}
 		// .quantity__button--plus
 		&--plus {
 			&::before {
-				mask-image: url("../../images/header/plus.svg");
+				mask-image: url("../images/header/plus.svg");
 			}
 		}
 	}
