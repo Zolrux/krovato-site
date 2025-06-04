@@ -14,6 +14,12 @@
 	&__user {
 		flex-grow: 1;
 	}
+
+	// .header-item-review__date
+
+	&__date {
+		margin-inline-start: auto;
+	}
 }
 
 .user-review {
