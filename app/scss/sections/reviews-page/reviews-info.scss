@@ -67,6 +67,15 @@
 			mask-size: toRem(20);
 			mask-repeat: no-repeat;
 			background-color: #fff;
+			transition: 0.6s transform;
+			will-change: transform;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					transform: rotate(360deg);
+				}
+			}
 		}
 	}
 }
