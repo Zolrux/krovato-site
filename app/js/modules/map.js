@@ -13,7 +13,7 @@ export default async function initMap() {
   const markerImgEl = document.createElement("img");
   
   markerImgEl.classList.add("contacts-info__map-marker");
-  markerImgEl.src = "../images/contacts-page/location-marker.svg";
+  markerImgEl.src = "images/contacts-page/location-marker.svg";
 
   const marker = new AdvancedMarkerElement({
     map,
