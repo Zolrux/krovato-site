@@ -112,6 +112,7 @@ function building() {
     '!app/images/**/*.html',
     '!app/images/src/**/*',
     'app/fonts/*.*',
+    'app/js/libs/*.*',
     'app/js/main.min.js',
     'app/*.html'
   ], {base : 'app'})
